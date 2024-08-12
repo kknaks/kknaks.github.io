@@ -1,0 +1,59 @@
+highlighter: rouge
+
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts: # Rouge Options › https://github.com/jneen/rouge#full-options
+    css_class: 'highlight'
+  math_engine: mathjax
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+
+paginate: 7
+paginate_path: "page:num"
+layout: post
+permalink: /:categories/:title
+excerpt_separator: "[-----]"
+
+url: # Required: replace this with your domain
+name: textalic # Required: will be displayed on every page's header
+title: site title # Required: site's default title
+shout: # Required: **TWO** lines, will be displayed on page's header.
+  - one liner one...
+  - one liner two...
+description: "Some short description on your site" # Required
+
+disqus:
+  comments: false # Global toggle on/off disqus comment
+  shortname:  # Required if you use disqus. Replace with your disqus shortname here
+
+gitalk:
+  comments: true # Global toggle on/off gitalk comment
+  # replace all of those below with your own
+  client_id: baeea51800be67550b52
+  client_secret: 4a521ccafa96b8b2b128659c35468bdd7ba5d4aa
+  repo: jekyll-theme-textalic
+  owner: unifreak
+  admin: unifreak
+  distraction_free_mode: true
+
+
+google_analytics:
+  id: "" # Required if you use google analytics. Replace with your tracking id here
+
+collections: # Define post series here
+  demo_series:
+    output: true
+  demo_series_2:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "post"
