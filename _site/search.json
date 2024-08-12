@@ -1,0 +1,63 @@
+[
+  
+    
+      {
+        "title"    : "Demo_series_post_1",
+        "category" : "",
+        "tags"     : "",
+        "url"      : "/demo_series/demo_series_post_1",
+        "date"     : "2024-08-12 18:53:12 +0900",
+        "content": "<p>Series are enssentially Jekyll Collections. So to add new series is like adding new collections. Say we want to add series <code class=\"language-plaintext highlighter-rouge\">tutorial</code></p>\n\n<ol>\n  <li>config your series in <code class=\"language-plaintext highlighter-rouge\">_config.yml</code> like</li>\n</ol>\n\n<div class=\"language-yaml highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"na\">collections</span><span class=\"pi\">:</span>\n  <span class=\"na\">tutorial</span><span class=\"pi\">:</span>\n    <span class=\"na\">output</span><span class=\"pi\">:</span> <span class=\"kc\">true</span>\n</code></pre></div></div>\n\n<ol>\n  <li>make corresponding series folder under project root: <code class=\"language-plaintext highlighter-rouge\">_tutorial/</code></li>\n  <li>post under series by adding new markdown file into <code class=\"language-plaintext highlighter-rouge\">_tutorial/</code></li>\n</ol>\n\n<p>See <a href=\"https://jekyllrb.com/docs/collections/\">Jekyll official doc on <code class=\"language-plaintext highlighter-rouge\">Collections</code></a></p>\n"
+      } ,
+    
+      {
+        "title"    : "Demo_series_post_2",
+        "category" : "",
+        "tags"     : "",
+        "url"      : "/demo_series/demo_series_post_2",
+        "date"     : "2024-08-12 18:53:12 +0900",
+        "content": "<p>demo 2 for series feature</p>\n"
+      } 
+     ,
+  
+    
+      {
+        "title"    : "Demo_series_2_post_1",
+        "category" : "",
+        "tags"     : "",
+        "url"      : "/demo_series_2/demo_series_2_post_1",
+        "date"     : "2024-08-12 18:53:12 +0900",
+        "content": "<p>demo 2 for series feature</p>\n"
+      } 
+     ,
+  
+    
+      {
+        "title"    : "Blogging",
+        "category" : "demo",
+        "tags"     : "tutorial",
+        "url"      : "/demo/Blogging",
+        "date"     : "2019-12-25 00:00:00 +0900",
+        "content": "<h2 id=\"blogging\">Blogging</h2>\n\n<p>You can begin writting your posts under <code class=\"language-plaintext highlighter-rouge\">/_posts</code> folder. See <a href=\"https://jekyllrb.com/docs/posts/\">Jekyll doc on posts</a>.</p>\n\n<p>Posts are automatically grouped under site’s post/category and post/tag menu. You can define post’s category and tags in the post’s <a href=\"https://jekyllrb.com/docs/front-matter/\">front matter</a>, using <code class=\"language-plaintext highlighter-rouge\">category</code> and <code class=\"language-plaintext highlighter-rouge\">tags</code> front matter block.</p>\n\n<h2 id=\"math-notation\">Math Notation</h2>\n\n<p>Textalic support math notation via <code class=\"language-plaintext highlighter-rouge\">mathjax</code>.</p>\n\n<p>There is two flavor to write math notation:</p>\n\n<h3 id=\"latex-math\">Latex Math</h3>\n\n<p>Enable this by add an <code class=\"language-plaintext highlighter-rouge\">usemath: latex</code> front matter in your post. Then you can wrap math notation inside <code class=\"language-plaintext highlighter-rouge\">$$</code>. For example:</p>\n\n<p><code class=\"language-plaintext highlighter-rouge\">$$E=mc^2$$</code> will be rendered as</p>\n\n\\[E=mc^2\\]\n\n<h3 id=\"asciimath\">Asciimath</h3>\n\n<p>Enable this by add an <code class=\"language-plaintext highlighter-rouge\">usemath: ascii</code> front matter in your post. Then you can wrap math notation inside \\`. For example:</p>\n\n<div class=\"language-plaintext highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code>\\`sum_(i=1)^n i^3=((n(n+1))/2)^2\\`\n</code></pre></div></div>\n\n<p>will be rendered as</p>\n\n<p>`sum_(i=1)^n i^3=((n(n+1))/2)^2`</p>\n\n<p>Checkout ascii math notation at <a href=\"http://asciimath.org/\">http://asciimath.org/</a></p>\n\n<hr />\n\n<p>You can use both by adding front matter <code class=\"language-plaintext highlighter-rouge\">usemath: [latex, ascii]</code></p>\n\n<h3 id=\"series\">Series</h3>\n\n<p>Sereis are implemented using <a href=\"https://jekyllrb.com/docs/collections/\">Jekyll’s collections</a>. So to add new series, following these steps:</p>\n\n<ol>\n  <li>\n    <p>Define a new collection in <code class=\"language-plaintext highlighter-rouge\">_config.yml</code>, under <code class=\"language-plaintext highlighter-rouge\">collections</code> configuration block</p>\n\n    <div class=\"language-yaml highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code> <span class=\"na\">collections</span><span class=\"pi\">:</span>\n   <span class=\"na\">demo_series</span><span class=\"pi\">:</span>\n     <span class=\"na\">output</span><span class=\"pi\">:</span> <span class=\"kc\">true</span>\n</code></pre></div>    </div>\n\n    <p>Note that to make the change to <code class=\"language-plaintext highlighter-rouge\">_config.yml</code> take effects, you <strong>need to restart jekyll</strong>.</p>\n  </li>\n  <li>\n    <p>Create the series (aka collection) folder <code class=\"language-plaintext highlighter-rouge\">/_demo_series</code>. Note that the <strong>folder name begin with <code class=\"language-plaintext highlighter-rouge\">_</code></strong></p>\n  </li>\n  <li>\n    <p>By adding new post under series folder, you add post under the corresponding series</p>\n  </li>\n</ol>\n\n<h2 id=\"deployment\">Deployment</h2>\n\n<p>See <a href=\"https://jekyllrb.com/docs/deployment/\">Jekyll doc on deployment</a></p>\n\n<h2 id=\"thats-it\">That’s it</h2>\n\n<p>Happy blogging!</p>\n"
+      } ,
+    
+      {
+        "title"    : "Install",
+        "category" : "doc",
+        "tags"     : "tutorial, textalic",
+        "url"      : "/doc/Install",
+        "date"     : "2019-12-25 00:00:00 +0900",
+        "content": "<h2 id=\"install--configuration\">Install &amp; Configuration</h2>\n\n<h3 id=\"set-up-jekyll\">Set up jekyll</h3>\n\n<p>Before anything, make sure you have set up jekyll correctly. See <a href=\"https://jekyllrb.com/docs/\">the official jekyll doc</a>.</p>\n\n<h3 id=\"clone-this-repo\">Clone this repo</h3>\n\n<p>Clone this repo into to your local machine, then <code class=\"language-plaintext highlighter-rouge\">cd</code> to the root directory of your local copy. Here is an overview of the project’s file structure:</p>\n\n<div class=\"language-console highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"go\">jekyll-theme-textalic\n</span><span class=\"gp\">├── 404.html                    #</span><span class=\"w\"> </span>404 page\n<span class=\"go\">├── Gemfile\n├── LICENCE\n</span><span class=\"gp\">├── _config.yml                 #</span><span class=\"w\"> </span>Main config\n<span class=\"go\">├── _data\n</span><span class=\"gp\">│   └── me.yml                  #</span><span class=\"w\"> </span>Personal info config\n<span class=\"gp\">├── _demo_series                #</span><span class=\"w\"> </span>A demo series, add series into series folder\n<span class=\"go\">│   └── demo_series_post_1.md\n├── _includes\n├── _layouts\n├── _posts\n</span><span class=\"gp\">│   └── 2019-12-25-Intro.md     #</span><span class=\"w\"> </span>Add new post here\n<span class=\"go\">├── _sass\n</span><span class=\"gp\">├── about                       #</span><span class=\"w\"> </span>About page\n<span class=\"gp\">├── assets                      #</span><span class=\"w\"> </span>images, fonts, css, js...\n<span class=\"go\">│   ├── img\n</span><span class=\"gp\">│   │   ├── me.png              #</span><span class=\"w\"> </span>Replace with your own, showed <span class=\"k\">in</span> /about page\n<span class=\"gp\">├── favicon.ico                 #</span><span class=\"w\"> </span>Replace with your own\n<span class=\"go\">├── feed.xml\n├── index.html\n├── resume\n</span><span class=\"gp\">│   └── index.md                #</span><span class=\"w\"> </span>You may write your resume here. linked <span class=\"k\">in</span> /about page\n<span class=\"go\">├── search.json\n├── series\n└── tag\n</span></code></pre></div></div>\n\n<h3 id=\"install-gems\">Install gems</h3>\n\n<p>Run the following to install required gems defined in <code class=\"language-plaintext highlighter-rouge\">Gemfile</code>:</p>\n\n<div class=\"language-plaintext highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code>$ bundle install\n</code></pre></div></div>\n\n<h3 id=\"customization\">Customization</h3>\n\n<p>Edit <code class=\"language-plaintext highlighter-rouge\">_config.yml</code> and <code class=\"language-plaintext highlighter-rouge\">_data/me.yml</code> to tweek the site configuration to your need. See corresponding file’s comments for details.</p>\n\n<p>You also should replace the <code class=\"language-plaintext highlighter-rouge\">/favicon.ico</code> and <code class=\"language-plaintext highlighter-rouge\">/assets/img/me.png</code> file with your own.</p>\n\n<h3 id=\"run-locally\">Run locally</h3>\n\n<p>Run <code class=\"language-plaintext highlighter-rouge\">bundle exec jekyll serve --watch</code> to run it locally.</p>\n"
+      } ,
+    
+      {
+        "title"    : "Intro",
+        "category" : "doc",
+        "tags"     : "tutorial, textalic",
+        "url"      : "/doc/Intro",
+        "date"     : "2019-12-25 00:00:00 +0900",
+        "content": "<h1 id=\"intro\">Intro</h1>\n\n<p><img src=\"/assets/img/mockup.png\" alt=\"mockup\" /></p>\n\n<p><strong>Textalic</strong> is a simple, responsive jekyll theme focus on blogging. Here is a <a href=\"https://unifreak.github.io\">live demo</a>.</p>\n\n<h1 id=\"features\">Features</h1>\n\n<ul>\n  <li>Github flavor markdown rendering</li>\n  <li>Post category, tag and series</li>\n  <li>Code highlighting</li>\n  <li>Autogenerate table of content</li>\n  <li>Disqus comment</li>\n  <li>Fulltext search (powered by <a href=\"https://github.com/christian-fei/Simple-Jekyll-Search\">jekyll-simple-search plugin</a>)</li>\n  <li>Google analytics</li>\n  <li>Atom feed</li>\n  <li>Sitemap</li>\n</ul>\n"
+      } 
+     
+  
+]

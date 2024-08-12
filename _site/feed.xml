@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>site title</title>
+    <description>Some short description on your site</description>
+    <link>http://localhost:4000http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 12 Aug 2024 18:53:12 +0900</pubDate>
+    <lastBuildDate>Mon, 12 Aug 2024 18:53:12 +0900</lastBuildDate>
+    <generator>Jekyll v4.3.3</generator>
+    
+      <item>
+        <title>Intro</title>
+        <description>&lt;h1 id=&quot;intro&quot;&gt;Intro&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/mockup.png&quot; alt=&quot;mockup&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Textalic&lt;/strong&gt; is a simple, responsive jekyll theme focus on blogging. Here is a &lt;a href=&quot;https://unifreak.github.io&quot;&gt;live demo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1 id=&quot;features&quot;&gt;Features&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Github flavor markdown rendering&lt;/li&gt;
+  &lt;li&gt;Post category, tag and series&lt;/li&gt;
+  &lt;li&gt;Code highlighting&lt;/li&gt;
+  &lt;li&gt;Autogenerate table of content&lt;/li&gt;
+  &lt;li&gt;Disqus comment&lt;/li&gt;
+  &lt;li&gt;Fulltext search (powered by &lt;a href=&quot;https://github.com/christian-fei/Simple-Jekyll-Search&quot;&gt;jekyll-simple-search plugin&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Google analytics&lt;/li&gt;
+  &lt;li&gt;Atom feed&lt;/li&gt;
+  &lt;li&gt;Sitemap&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Wed, 25 Dec 2019 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000http://localhost:4000/doc/Intro</link>
+        <guid isPermaLink="true">http://localhost:4000http://localhost:4000/doc/Intro</guid>
+        
+        <category>tutorial</category>
+        
+        <category>textalic</category>
+        
+        
+        <category>doc</category>
+        
+      </item>
+    
+      <item>
+        <title>Install</title>
+        <description>&lt;h2 id=&quot;install--configuration&quot;&gt;Install &amp;amp; Configuration&lt;/h2&gt;
+
+&lt;h3 id=&quot;set-up-jekyll&quot;&gt;Set up jekyll&lt;/h3&gt;
+
+&lt;p&gt;Before anything, make sure you have set up jekyll correctly. See &lt;a href=&quot;https://jekyllrb.com/docs/&quot;&gt;the official jekyll doc&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;clone-this-repo&quot;&gt;Clone this repo&lt;/h3&gt;
+
+&lt;p&gt;Clone this repo into to your local machine, then &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cd&lt;/code&gt; to the root directory of your local copy. Here is an overview of the project’s file structure:&lt;/p&gt;
+
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;go&quot;&gt;jekyll-theme-textalic
+&lt;/span&gt;&lt;span class=&quot;gp&quot;&gt;├── 404.html                    #&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;404 page
+&lt;span class=&quot;go&quot;&gt;├── Gemfile
+├── LICENCE
+&lt;/span&gt;&lt;span class=&quot;gp&quot;&gt;├── _config.yml                 #&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;Main config
+&lt;span class=&quot;go&quot;&gt;├── _data
+&lt;/span&gt;&lt;span class=&quot;gp&quot;&gt;│   └── me.yml                  #&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;Personal info config
+&lt;span class=&quot;gp&quot;&gt;├── _demo_series                #&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;A demo series, add series into series folder
+&lt;span class=&quot;go&quot;&gt;│   └── demo_series_post_1.md
+├── _includes
+├── _layouts
+├── _posts
+&lt;/span&gt;&lt;span class=&quot;gp&quot;&gt;│   └── 2019-12-25-Intro.md     #&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;Add new post here
+&lt;span class=&quot;go&quot;&gt;├── _sass
+&lt;/span&gt;&lt;span class=&quot;gp&quot;&gt;├── about                       #&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;About page
+&lt;span class=&quot;gp&quot;&gt;├── assets                      #&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;images, fonts, css, js...
+&lt;span class=&quot;go&quot;&gt;│   ├── img
+&lt;/span&gt;&lt;span class=&quot;gp&quot;&gt;│   │   ├── me.png              #&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;Replace with your own, showed &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; /about page
+&lt;span class=&quot;gp&quot;&gt;├── favicon.ico                 #&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;Replace with your own
+&lt;span class=&quot;go&quot;&gt;├── feed.xml
+├── index.html
+├── resume
+&lt;/span&gt;&lt;span class=&quot;gp&quot;&gt;│   └── index.md                #&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;You may write your resume here. linked &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; /about page
+&lt;span class=&quot;go&quot;&gt;├── search.json
+├── series
+└── tag
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;install-gems&quot;&gt;Install gems&lt;/h3&gt;
+
+&lt;p&gt;Run the following to install required gems defined in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Gemfile&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ bundle install
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;customization&quot;&gt;Customization&lt;/h3&gt;
+
+&lt;p&gt;Edit &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_data/me.yml&lt;/code&gt; to tweek the site configuration to your need. See corresponding file’s comments for details.&lt;/p&gt;
+
+&lt;p&gt;You also should replace the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/favicon.ico&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/assets/img/me.png&lt;/code&gt; file with your own.&lt;/p&gt;
+
+&lt;h3 id=&quot;run-locally&quot;&gt;Run locally&lt;/h3&gt;
+
+&lt;p&gt;Run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bundle exec jekyll serve --watch&lt;/code&gt; to run it locally.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 25 Dec 2019 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000http://localhost:4000/doc/Install</link>
+        <guid isPermaLink="true">http://localhost:4000http://localhost:4000/doc/Install</guid>
+        
+        <category>tutorial</category>
+        
+        <category>textalic</category>
+        
+        
+        <category>doc</category>
+        
+      </item>
+    
+      <item>
+        <title>Blogging</title>
+        <description>&lt;h2 id=&quot;blogging&quot;&gt;Blogging&lt;/h2&gt;
+
+&lt;p&gt;You can begin writting your posts under &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/_posts&lt;/code&gt; folder. See &lt;a href=&quot;https://jekyllrb.com/docs/posts/&quot;&gt;Jekyll doc on posts&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Posts are automatically grouped under site’s post/category and post/tag menu. You can define post’s category and tags in the post’s &lt;a href=&quot;https://jekyllrb.com/docs/front-matter/&quot;&gt;front matter&lt;/a&gt;, using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;category&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tags&lt;/code&gt; front matter block.&lt;/p&gt;
+
+&lt;h2 id=&quot;math-notation&quot;&gt;Math Notation&lt;/h2&gt;
+
+&lt;p&gt;Textalic support math notation via &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mathjax&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;There is two flavor to write math notation:&lt;/p&gt;
+
+&lt;h3 id=&quot;latex-math&quot;&gt;Latex Math&lt;/h3&gt;
+
+&lt;p&gt;Enable this by add an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;usemath: latex&lt;/code&gt; front matter in your post. Then you can wrap math notation inside &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$$&lt;/code&gt;. For example:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$$E=mc^2$$&lt;/code&gt; will be rendered as&lt;/p&gt;
+
+\[E=mc^2\]
+
+&lt;h3 id=&quot;asciimath&quot;&gt;Asciimath&lt;/h3&gt;
+
+&lt;p&gt;Enable this by add an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;usemath: ascii&lt;/code&gt; front matter in your post. Then you can wrap math notation inside \`. For example:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;\`sum_(i=1)^n i^3=((n(n+1))/2)^2\`
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;will be rendered as&lt;/p&gt;
+
+&lt;p&gt;`sum_(i=1)^n i^3=((n(n+1))/2)^2`&lt;/p&gt;
+
+&lt;p&gt;Checkout ascii math notation at &lt;a href=&quot;http://asciimath.org/&quot;&gt;http://asciimath.org/&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;You can use both by adding front matter &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;usemath: [latex, ascii]&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;series&quot;&gt;Series&lt;/h3&gt;
+
+&lt;p&gt;Sereis are implemented using &lt;a href=&quot;https://jekyllrb.com/docs/collections/&quot;&gt;Jekyll’s collections&lt;/a&gt;. So to add new series, following these steps:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Define a new collection in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;, under &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;collections&lt;/code&gt; configuration block&lt;/p&gt;
+
+    &lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;na&quot;&gt;collections&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+   &lt;span class=&quot;na&quot;&gt;demo_series&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+     &lt;span class=&quot;na&quot;&gt;output&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;Note that to make the change to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; take effects, you &lt;strong&gt;need to restart jekyll&lt;/strong&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Create the series (aka collection) folder &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/_demo_series&lt;/code&gt;. Note that the &lt;strong&gt;folder name begin with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;By adding new post under series folder, you add post under the corresponding series&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;deployment&quot;&gt;Deployment&lt;/h2&gt;
+
+&lt;p&gt;See &lt;a href=&quot;https://jekyllrb.com/docs/deployment/&quot;&gt;Jekyll doc on deployment&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;thats-it&quot;&gt;That’s it&lt;/h2&gt;
+
+&lt;p&gt;Happy blogging!&lt;/p&gt;
+</description>
+        <pubDate>Wed, 25 Dec 2019 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000http://localhost:4000/demo/Blogging</link>
+        <guid isPermaLink="true">http://localhost:4000http://localhost:4000/demo/Blogging</guid>
+        
+        <category>tutorial</category>
+        
+        
+        <category>demo</category>
+        
+      </item>
+    
+  </channel>
+</rss>
