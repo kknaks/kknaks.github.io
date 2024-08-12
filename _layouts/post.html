@@ -1,44 +1,42 @@
 ---
 layout: default
-markdown: true
 ---
-<div class="row">
-  <div id="markdown-container" class="col-lg-9">
-    <header>
-      <p id="post-title">{{ page.title | replace: "_", " " | capitalize}}</p>
-      {% if page.tags %}
-      <ul class="tags clearfix">
-        {% for tag in page.tags %}
-        <li><i class="fa fa-tag"></i> {{ tag }}</li>
-        {% endfor %}
-      </ul>
-      {% endif %}
 
-      <p id="post-meta">
-      posted
-      {% if page.date %}
-         on <b>{{ page.date | date_to_string }}</b>
-      {% endif %}
-      {% if page.categories[0] %}
-        under category <b>{{ page.categories | join: ", " }}</b>
-      {% endif %}
-      {% unless page.collection == 'posts'  %}
-        in series <b>{{ page.collection }}</b>
-      {% endunless %}
-      </p>
-    </header>
-
-    {{ content }}
+<div class="row justify-content-center" id="blog-post-container">
+  <div class="col-lg-10">
+    {%- include blog_post_article.html -%}
+     {%- include blog_post_comments.html-%}
   </div>
-
-  <div id="markdown-outline" class="col-lg-3">
-  </div>
-
-  {% if site.disqus.comments %}
-    {% include disqus.html %}
-  {% endif %}
-
-  {% if site.gitalk.comments %}
-    {% include gitalk.html %}
-  {% endif %}
 </div>
+<div class="row">
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card-header">About {{site.author}}</div>
+      <div class="card-body">
+        <p class="author_bio">{{ site.author_bio }}</p>
+        {%- include github_star_button.html -%}
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card-header">Categories</div>
+      <div class="card-body text-dark">
+        {%- include blog_categories.html -%}
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card-header">Useful Links</div>
+      <div class="card-body text-dark">
+        {% for i in site.urls %}
+        <li>
+          <a href="{{ site.url}}{{site.baseurl}}{{ i.url }}">{{ i.text }}</a>
+        </li>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
