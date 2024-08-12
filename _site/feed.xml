@@ -3,14 +3,14 @@
   <channel>
     <title>site title</title>
     <description>Some short description on your site</description>
-    <link>http://localhost:4000http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 12 Aug 2024 19:40:50 +0900</pubDate>
-    <lastBuildDate>Mon, 12 Aug 2024 19:40:50 +0900</lastBuildDate>
+    <link>http://localhost:4001http://localhost:4001/</link>
+    <atom:link href="http://localhost:4001http://localhost:4001/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 12 Aug 2024 19:45:19 +0900</pubDate>
+    <lastBuildDate>Mon, 12 Aug 2024 19:45:19 +0900</lastBuildDate>
     <generator>Jekyll v4.3.3</generator>
     
       <item>
-        <title>Welcome to Jekyll!</title>
+        <title>Day54</title>
         <description>&lt;h1 id=&quot;foreign-key&quot;&gt;Foreign key&lt;/h1&gt;
 &lt;h2 id=&quot;foreign-key의-개념&quot;&gt;Foreign key의 개념&lt;/h2&gt;
 &lt;ul&gt;
@@ -199,9 +199,13 @@ where 컬럼명 in (select distinct 컬럼명 from 테이블명2);
 &lt;/ul&gt;
 </description>
         <pubDate>Mon, 12 Aug 2024 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000http://localhost:4000/Day54</link>
-        <guid isPermaLink="true">http://localhost:4000http://localhost:4000/Day54</guid>
+        <link>http://localhost:4001http://localhost:4001/demo/Day54</link>
+        <guid isPermaLink="true">http://localhost:4001http://localhost:4001/demo/Day54</guid>
         
+        <category>tutorial</category>
+        
+        
+        <category>demo</category>
         
       </item>
     
@@ -228,8 +232,8 @@ where 컬럼명 in (select distinct 컬럼명 from 테이블명2);
 &lt;/ul&gt;
 </description>
         <pubDate>Wed, 25 Dec 2019 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000http://localhost:4000/doc/Intro</link>
-        <guid isPermaLink="true">http://localhost:4000http://localhost:4000/doc/Intro</guid>
+        <link>http://localhost:4001http://localhost:4001/doc/Intro</link>
+        <guid isPermaLink="true">http://localhost:4001http://localhost:4001/doc/Intro</guid>
         
         <category>tutorial</category>
         
@@ -298,8 +302,8 @@ where 컬럼명 in (select distinct 컬럼명 from 테이블명2);
 &lt;p&gt;Run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bundle exec jekyll serve --watch&lt;/code&gt; to run it locally.&lt;/p&gt;
 </description>
         <pubDate>Wed, 25 Dec 2019 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000http://localhost:4000/doc/Install</link>
-        <guid isPermaLink="true">http://localhost:4000http://localhost:4000/doc/Install</guid>
+        <link>http://localhost:4001http://localhost:4001/doc/Install</link>
+        <guid isPermaLink="true">http://localhost:4001http://localhost:4001/doc/Install</guid>
         
         <category>tutorial</category>
         
@@ -381,8 +385,8 @@ where 컬럼명 in (select distinct 컬럼명 from 테이블명2);
 &lt;p&gt;Happy blogging!&lt;/p&gt;
 </description>
         <pubDate>Wed, 25 Dec 2019 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000http://localhost:4000/demo/Blogging</link>
-        <guid isPermaLink="true">http://localhost:4000http://localhost:4000/demo/Blogging</guid>
+        <link>http://localhost:4001http://localhost:4001/demo/Blogging</link>
+        <guid isPermaLink="true">http://localhost:4001http://localhost:4001/demo/Blogging</guid>
         
         <category>tutorial</category>
         
