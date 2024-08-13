@@ -26,11 +26,11 @@ urls:
 
 author_logo: profile.png
 author: John Doe
-author_bio: Hi, my name is John Doe. I built this site using devlopr-jekyll :D
+author_bio: Hi, my name is naknak. I built this site using devlopr-jekyll :D
 author_email: "mail@sujaykundu.com"
-author_location: India
+author_location: Republic of Korea
 author_website_url: "https://sujaykundu.com"
-typewrite-text: 코딩 공부하면서 맜있는거 먹는 거낙이의 하루
+typewrite-text: 코딩 공부하면서 맛난거 먹는 거낙이의 하루
 hero_cover_img: sample_cover.jpg # replace this for changing homepage cover (eg. try cover.jpeg). Image should be in /assets/img
 
 # Experiences
@@ -73,7 +73,7 @@ author_project_details:
 # social links
 twitter_username: xplor4r
 github_username:  sujaykundu777
-instagram_username: xplor4r
+instagram_username: kk_naks
 # facebook_username: johndoe
 # linkedin_username: johndoe
 # behance_username: johndoe

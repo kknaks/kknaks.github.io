@@ -1,6 +1,6 @@
 ---
-name: John Doe
-username: johndoe
+name: nak
+username: naknak
 bio: "Hi I a John, a Web Developer and Designer."
 site: http://johndoe.com
 avatar: johndoe.png
