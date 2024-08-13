@@ -1,4 +1,36 @@
 # Add Authors here
+이건학:
+  name: 이건학
+  username: kk_naks
+  site: http://kknaks.github.io
+  avatar: johndoe.png
+  bio: "안녕하세요 거낙이의 블로그입니다."
+  email: dh221009@khu.ac.kr
+  social:
+    - title: "github"
+      url: "https://github.com/johndoe"
+    - title: "linkedin"
+      url: "https://www.linkedin.com/in/johndoe"
+    - title: "youtube"
+      url: "https://www.youtube.com/channel/UCSfLBFFfNU9r6ihfei6VeJw"
+    - title: "facebook"
+      url: "https://www.facebook.com/johndoe"
+    - title: "twitter"
+      url: "https://www.twitter.com/johndoe"
+    - title: "behance"
+      url: "https://behance.com/johndoe"
+    - title: "instagram"
+      url: "https://instagram.com/johndoe"
+    - title: "medium"
+      url: "https://medium.com/johndoe"
+    - title: "telegram"
+      url: "https://telegram.com/johndoe"
+    - title: "dribbble"
+      url: "https://dribbble.com/johndoe"
+    - title: "flickr"
+      url: "https://flickr.com/johndoe"
+
+
 johndoe:
    name: nak1
    username: nak2
