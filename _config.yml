@@ -35,17 +35,11 @@ hero_cover_img: sample_cover.jpg # replace this for changing homepage cover (eg.
 
 # Experiences
 author_work_experiences:
-            - company_name: Google
-              company_logo: google.png
-              company_url: https://google.com
-              designation: Software Engineer
-              description: Worked on various Google Products
-              visibility: true
-            - company_name: Microsoft
-              company_logo: microsoft.png
-              company_url: https://microsoft.com
-              designation: Azure Developer
-              description: Worked on various Azure Cloud Products
+            - company_name: Dowha-Engineering Co
+              company_logo:
+              company_url: https://www.dohwa.co.kr
+              designation: Civil Engineer
+              description: Water and Wastewater Engineering
               visibility: true
 
 # Education
@@ -72,7 +66,7 @@ author_project_details:
 
 # social links
 twitter_username: xplor4r
-github_username:  sujaykundu777
+github_username:  kknaks
 instagram_username: kk_naks
 # facebook_username: johndoe
 # linkedin_username: johndoe
