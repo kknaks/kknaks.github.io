@@ -1,15 +1,15 @@
 ---
-layout: post
+layout: project
 title:  "123412341"
 summary: "12341324"
-author: johndoe
+author: 이건학
 date: '2021-02-28 1:35:23 +0530'
-category: ['jekyll','guides', 'sample_category']
+category: []
 tags: jekyllsdfdf
 thumbnail: /assets/img/posts/code2.jpeg
 keywords: devlopr jekyll, how to use devlopr, devlopr, how to use devlopr-jekyll, devlopr-jekyll tutorial,best jekyll themes, multi categories and tags
 usemathjax: false
-permalink: /blog/adding-categories-tags-in-posts2/
+permalink: /project/adding-categories-tags-in-posts/
 ---
 ## 1\. 네이버 클라우드 부트캠프란 ?
 

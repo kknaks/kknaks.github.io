@@ -14,12 +14,14 @@ urls:
       url: /about
     - text: Blog
       url: /blog
-    - text: Gallery
-      url: /gallery
-    - text: Shop
-      url : /shop
-    - text: Contact
-      url : /contact
+    - text: Project
+      url: /project
+#    - text: Gallery
+#      url: /gallery
+#    - text: Shop
+#      url : /shop
+#    - text: Contact
+#      url : /contact
 
 
 # Edit Author details (For multi authors check _data/authors.yml)
@@ -127,7 +129,7 @@ paginate_path: "/blog/page/:num/"
 #     category: '/category/:name/'
 
 collections:
-  products:
+  projects:
     output: true
   authors:
     output: true

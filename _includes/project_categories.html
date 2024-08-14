@@ -1,0 +1,8 @@
+<ul>
+    {% assign categories = site.projects | map: "categories" | uniq | sort %}
+    {% for category in categories %}
+    <li>
+        <a href="{{ site.baseurl }}/project/categories/{{ category | slugify }}">{{ category }}</a>
+    </li>
+    {% endfor %}
+</ul>
