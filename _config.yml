@@ -50,11 +50,11 @@ author_work_experiences:
 
 # Education
 author_education_details:
-              - college_logo: mit.png
-                college_name: MIT
-                college_url: https://mit.org
-                college_degree: CS Engineer
-                description: Bachelor of Technology
+              - college_logo: khu.png
+                college_name: Khung HEE Univ
+                college_url: https://khu.ac.kr
+                college_degree: Civil Engineer
+                description: Civil eng
                 visibility: true
 
 # Projects
