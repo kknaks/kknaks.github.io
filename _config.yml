@@ -131,6 +131,7 @@ paginate_path: "/blog/page/:num/"
 collections:
   projects:
     output: true
+    permalink: /project/:path/
   authors:
     output: true
 
