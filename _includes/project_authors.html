@@ -1,7 +1,0 @@
-<ul>
-    {% for author in site.data.authors %}
-    <li>
-        <a href="{{ site.baseurl }}/project/authors/{{ author[0] | slugify }}">{{ author[1].name }}</a>
-    </li>
-    {% endfor %}
-</ul>

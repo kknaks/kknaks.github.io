@@ -4,7 +4,7 @@ title:  "오목프로그램"
 summary: "토이프로젝트4"
 author: 이건학
 date: '2021-02-28 1:35:23 +0530'
-category: ["토이프로젝트",]
+category: ["ToyProject"]
 tags: 토이프로젝트4
 thumbnail: /assets/img/posts/project_thumbnail/project_toy.png
 keywords: 오목프로그램

@@ -1,8 +1,9 @@
-<ul>
-    {% assign categories = site.projects | map: "categories" | uniq | sort %}
-    {% for category in categories %}
-    <li>
-        <a href="{{ site.baseurl }}/project/categories/{{ category | slugify }}">{{ category }}</a>
-    </li>
-    {% endfor %}
-</ul>
+
+            {% for tag in site.categories %} {% capture tag_name %}{{ tag | first }}{% endcapture %}
+            <div id="#{{ tag_name | slugize }}"></div>
+            <li class="tag-head">
+                <a href="{{ site.baseurl }}/project/categories/{{ tag_name }}">{{ tag_name }}</a>
+            </li>
+            <a name="{{ tag_name | slugize }}"></a>
+
+            {% endfor %}
