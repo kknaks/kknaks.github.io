@@ -15,7 +15,7 @@ layout: default
             <h6 class="card-subtitle mb-2 text-muted">{{ project.date | date: "%b %-d, %Y" }}</h6>
             <p class="card-text">{{ project.summary }}</p>
             <a href="{{ project.url | prepend: site.baseurl }}" data-disqus-identifier="{{ project.url }}" class="btn btn-dark btn-lg">Read</a>
-            <p>{{ project.url | prepend: site.baseurl }}</p>
+<!--            <p>{{ project.url | prepend: site.baseurl }}</p>-->
           </div>
         </div>
         {% endfor %}
