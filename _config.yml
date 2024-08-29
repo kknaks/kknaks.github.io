@@ -33,7 +33,7 @@ author_email: "mail@sujaykundu.com"
 author_location: Republic of Korea
 author_website_url: "https://sujaykundu.com"
 typewrite-text: 코딩 공부하면서 맛난거 먹는 거낙이의 하루
-hero_cover_img: sample_cover.jpg # replace this for changing homepage cover (eg. try cover.jpeg). Image should be in /assets/img
+hero_cover_img: cover.jpg # replace this for changing homepage cover (eg. try cover.jpeg). Image should be in /assets/img
 
 # Experiences
 author_work_experiences:
