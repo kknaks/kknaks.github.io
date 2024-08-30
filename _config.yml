@@ -1,5 +1,5 @@
 title: 거낙이의 하루
-subtitle: A Portfolio Jekyll Theme Built for Developers
+subtitle: 코딩 공부 저장소
 description: >- # this means to ignore newlines until "baseurl:"
   devlopr-jekyll is a beautiful Jekyll Theme Built For Developers, which is optimized for speed and readability.
 
@@ -29,9 +29,9 @@ urls:
 author_logo: profile.png
 author: 이건학
 author_bio: Hi, my name is naknak. I built this site using devlopr-jekyll :D
-author_email: "mail@sujaykundu.com"
+author_email: "dh221009@khu.ac.kr"
 author_location: Republic of Korea
-author_website_url: "https://sujaykundu.com"
+author_website_url: "https://github.com/kknaks"
 typewrite-text: 코딩 공부하면서 맛난거 먹는 거낙이의 하루
 hero_cover_img: cover.jpg # replace this for changing homepage cover (eg. try cover.jpeg). Image should be in /assets/img
 
@@ -54,20 +54,20 @@ author_education_details:
                 visibility: true
 
 # Projects
-author_project_details:
-              - project_thumbnail: gamershub.png
-                project_title: Gamers Hub
-                project_description: A Platform built for Gamers and Game Devs
-                project_url: https://gamershub.in
-                visibility: true
-              - project_thumbnail: hack4r.PNG
-                project_title: Hack4r
-                project_description: A Platform built for Hackers and Penetration Testers
-                project_url: https://hack4r.com
-                visibility: true
+#author_project_details:
+#              - project_thumbnail: gamershub.png
+#                project_title: Gamers Hub
+#                project_description: A Platform built for Gamers and Game Devs
+#                project_url: https://gamershub.in
+#                visibility: true
+#              - project_thumbnail: hack4r.PNG
+#                project_title: Hack4r
+#                project_description: A Platform built for Hackers and Penetration Testers
+#                project_url: https://hack4r.com
+#                visibility: true
 
 # social links
-twitter_username: xplor4r
+#twitter_username: xplor4r
 github_username:  kknaks
 instagram_username: kk_naks
 # facebook_username: johndoe
