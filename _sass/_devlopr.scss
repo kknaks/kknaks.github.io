@@ -2516,6 +2516,74 @@ footer {
          filter: blur(0px);
      }
  }
+.toc {
+  position: fixed; /* TOC를 오른쪽에 고정 */
+  top: 5em; /* 상단에서 떨어진 거리 */
+  right: 20px; /* 오른쪽에서 떨어진 거리 */
+  width: 300px; /* TOC의 가로 길이 */
+  background-color: #f9f9f9; /* 배경색 */
+  padding: 10px;
+  border: 1px solid #ccc; /* 경계선 */
+  border-radius: 5px;
+  max-height: calc(100vh - 7em); /* 화면 높이에 따라 TOC 높이 제한 */
+  overflow-y: auto; /* 긴 목차일 때 스크롤 */
+  z-index: 10; /* 다른 요소 위에 배치 */
+}
+
+.toc__menu {
+  overflow-y: auto;
+  max-height: calc(100vh - 7em); /* 메뉴 자체의 스크롤 높이 설정 */
+}
+
+.toc__menu h2,
+.toc__menu h3,
+.toc__menu h4,
+.toc__menu h5,
+.toc__menu h6 {
+  margin-bottom: 0;
+  font-family: sans-serif; /* 헤딩 폰트 */
+}
+
+.toc__menu p,
+.toc__menu li {
+  font-family: sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 5px;
+}
+
+.toc__menu ul {
+  padding-left: 0px !important; /* 목록 항목에 15px 들여쓰기 */
+}
+
+.toc__menu li {
+  margin-left: 0 !important; /* 추가적인 마진 제거 */
+  padding-left: 0 !important; /* 목록 항목 자체의 패딩 제거 */
+}
+
+.toc__menu a {
+  text-decoration: none; /* 링크에서 밑줄 제거 */
+  color: #000; /* 기본 링크 색상 */
+
+  &:hover {
+    text-decoration: underline; /* 링크에 마우스 올릴 때 밑줄 */
+  }
+}
+
+.toc__menu a.active {
+  font-weight: bold; /* 현재 활성화된 항목에 굵은 글씨 */
+}
+
+/* 웹킷 기반 브라우저에서 스크롤바 스타일 수정 */
+.toc::-webkit-scrollbar {
+  width: 0; /* 스크롤바 너비를 0으로 설정해 보이지 않게 만듦 */
+  height: 0; /* 수평 스크롤바의 높이 */
+}
+
+.toc {
+  -ms-overflow-style: none; /* IE와 Edge에서 스크롤바 숨기기 */
+  scrollbar-width: none; /* Firefox에서 스크롤바 숨기기 */
+}
 
  /* Syntax Hightlighter */
  .highlight pre { background-color: #212529; padding: 20px;}
