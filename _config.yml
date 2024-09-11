@@ -232,5 +232,3 @@ exclude:
 
 
 destination: ./build
-plugins:
-  - jekyll-toc
