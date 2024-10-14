@@ -11,7 +11,7 @@ jobs:
     outputs:
       target: ${{ steps.set-output.outputs.target }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v2  # 버전 수정
 
       - name: get deployment target
         run: |
@@ -22,15 +22,10 @@ jobs:
         if: success() && !contains(fromJSON('["gh-pages", "firebase", "none"]'), env.TARGET)
         run: echo 'Invalid Deployment Target' && exit 1
 
-      # gh actions doesn't support using the 'env' context on job level ifs for
-      # some reason smh. here we use outputs instead
       - name: set output to deploy target
         id: set-output
         run: echo "::set-output name=target::${{ env.TARGET }}"
 
-  # not sure if anyone wants this but I'm putting this here for those that don't
-  # want to host their site. else the actions will show an annoying x whenever
-  # you push to master
   deploy-none:
     runs-on: ubuntu-latest
     needs: set-deploy-type
@@ -44,14 +39,12 @@ jobs:
     if: needs.set-deploy-type.outputs.target == 'gh-pages'
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v2
 
       - name: Deploy Jekyll Site
         uses: sujaykundu777/jekyll-deploy-action@1.0.5
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_REPOSITORY: ${{ secrets.GITHUB_REPOSITORY }}
-          GITHUB_ACTOR: ${{ secrets.GITHUB_ACTOR }}
 
   deploy-firebase:
     runs-on: ubuntu-latest
@@ -59,11 +52,12 @@ jobs:
     if: needs.set-deploy-type.outputs.target == 'firebase'
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v2
 
       - name: setup ruby
         uses: ruby/setup-ruby@v1
         with:
+          ruby-version: '3.0'  # Ruby 버전 추가
           bundler-cache: true
 
       - name: build jekyll
