@@ -57,7 +57,7 @@ jobs:
       - name: setup ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.0'  # Ruby 버전 추가
+          ruby-version: '2.6'  # Ruby 버전 추가
           bundler-cache: true
 
       - name: build jekyll
