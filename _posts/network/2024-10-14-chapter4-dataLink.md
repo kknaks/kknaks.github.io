@@ -73,6 +73,7 @@ permalink: /blog/network04/
 
 ### 3) ARP를 이용하여 MAC주소를 얻는 과정
 - ARP(Address Resolution Protocl)은 IP주소와 MAC주소를 매핑하여 MAC주소를 알아낸다. 
+- PC -> 허브 -> 라우터 -> 허브 -> PC 순으로 진행된다. 
   
   ```
   컴퓨터 A(IP주소 192.168.0.2)가 컴퓨터 B(IP주소 192.168.0.3)에게 데이터를 전송하려한다.
@@ -87,11 +88,20 @@ permalink: /blog/network04/
 
   ![image](https://github.com/user-attachments/assets/9670748e-3d30-406f-b882-2e3d122ae203)
 
+# 스위치의 구조 
+## 1. 스위치의 구조 
+- 스위치는 허브와 동일한 기능을 수행하지만, 모든 송수신 데이터를 모든 컴퓨터에 전송하는 허브와 달리 특정 컴퓨터와만 송수신을 하는 구조이다.
+- 소규모 네트워크 안에서 컴퓨터, 프린터 등 모든 장칠르 서로 연결해서 데이터를 쉽게 공유할 수 있는 장비 
 
+  ![image](https://github.com/user-attachments/assets/7ce2e658-54a3-42f1-ad62-b73d676c4592)
 
+## 2. 스위치에서 MAC테이블 관리 하기 
+- 스위치는 연결된 컴퓨터들 및 다른 장비들의 MAC주소를 관리한다.
+  ![image](https://github.com/user-attachments/assets/0ba373db-7be2-46ca-9c9f-09f0e15869a6)
 
-
-
+### 1) 플러딩
+- **플러딩** : 스위치에 물려있는 모든 컴퓨터에 데이터를 보내는 것을 말한다.
+- 플러딩이후에 MAC테이블은 자신의 MAC테이블을 업데이트한다. 
 
 
 
