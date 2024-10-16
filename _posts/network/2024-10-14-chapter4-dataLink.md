@@ -46,4 +46,62 @@ permalink: /blog/network04/
 
 # MAC주소
 **MAC이란**
-- Media Access Control 주소 
+- Media Access Control 주소로 랜카드에 할당된 값이며, 48비트로 이루어진 고유한 값이다. 
+- OUI(Organizational Unique Identifier) : 상위 24비트에 할당되며 랜카드 제조사에 부여된 코드이다.
+- UAA(Universally Administrered Address) : 제조사가 랜카드에 부여한 고유번호이다.
+ ![image](https://github.com/user-attachments/assets/35beb19a-4551-498b-9f76-a092ec2dc43f)
+
+  ```
+  8bit 단위로 하이픈(-)이나 콜론을(:) 사용해 16진술로 표기한다.
+  1C-1B-B5-08-A4-26
+  1C:1B:B5:08:A4:26
+  ```
+
+## 1. MAC주소의 활용
+### 1) 프레임의 구조
+- OSI7의 2계층에서는 MAC주소를 헤더에 넣어 프레임을 생성한다. 
+- 송신자의 MAC주소와 수신자의 MAC주소를 포함하여 헤더를 생성한다. 
+- 이더넷 헤더에는 이 MAC주소값과 프로토콜 정보를 추가하여 송신한다. 
+
+  ![image](https://github.com/user-attachments/assets/5f054ef4-e652-4df7-bae3-9dd3cc2b15d8)
+
+### 2) 프로토콜의 종류
+- 프로토콜에는 IPv4, ARP, IPv6가 있다. 
+- IPv4 : 현재 사용되고 있는 일반적인 32비트의 IP 주소
+- IPv6 : IPv4주소 부족문제를 해결하기 위한 128비트의 IP주소
+- ARP : IP주소와 MAC주소를 매핑해주는 프로토콜
+
+### 3) ARP를 이용하여 MAC주소를 얻는 과정
+- ARP(Address Resolution Protocl)은 IP주소와 MAC주소를 매핑하여 MAC주소를 알아낸다. 
+  
+  ```
+  컴퓨터 A(IP주소 192.168.0.2)가 컴퓨터 B(IP주소 192.168.0.3)에게 데이터를 전송하려한다.
+  ```
+  1. 컴퓨터 A는 같은 허브에 묶여 있는 모든 컴퓨터에게 192.168.0.3이라는 IP주소의 MAC주소를 묻는다. <br>
+      (모든 컴퓨터에게 질의 하는 행위를 브로드캐스트라고 하며, MAC주소를 묻는 것을 ARP요청이라고 한다.) 
+  2. 허브에 묶여 있는 컴퓨터는 자신의 IP와 192.168.0.3과 비교를 하고, 최종적으로 컴퓨터B가 자신의 MAC주소를 전달한다. <br>
+     (이것을 ARP응답이라고 한다.)
+  3. ARP응답을 받은 컴퓨터 A는 B의 IP와 MAC주소를 테이블로 정리하여 저장한다.<br>
+     (이 테이블을 ARP테이블 이라고 한다.)
+  4. 이러한 과정을 통해 컴퓨터 A는 컴퓨터 B와 통신을 할 수 있게 된다. 
+
+  ![image](https://github.com/user-attachments/assets/9670748e-3d30-406f-b882-2e3d122ae203)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
