@@ -89,6 +89,7 @@ permalink: /blog/network06/
   3. 송신자에게 확인응답번호를 전송하고 다음 패킷을 받는다.
   4. 2-3과정을 반복한다.
      ![image](https://github.com/user-attachments/assets/1bea1c58-8c6a-4a7b-aef1-e2d546102f12)
+
 ## 4. 윈도우 크기 
 - **윈도우크기** : 송신자가 한번에 보낼 수 있는 데이터의 최대크기를 말한다.
 - 수신자가 받을 수 있는 데이터의 양을 확인 후 데이터를 송신해야 한다. 
