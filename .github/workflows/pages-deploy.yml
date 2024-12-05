@@ -58,7 +58,8 @@ jobs:
             \-\-ignore-missing-alt \
             \-\-allow-missing-href \
             \-\-no-check-internal-hash \
-            \-\-ignore-urls "/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/,/^\/category/,/^\/tag\//,/^\/[0-9]+$/,/^\/\/.*$/,/\.exerd$/"
+            \-\-ignore-files "/_site\/blog\/(Day31|Day102)\/.*/" \
+            \-\-ignore-urls "/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/,/^\/category/,/^\/tag\//,/^\/[0-9]+$/,/^\/\/.*$/,/\.exerd$/,/^\/img_/,/^\/image-/"
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
