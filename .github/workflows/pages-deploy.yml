@@ -55,11 +55,8 @@ jobs:
           bundle exec htmlproofer _site \
             \-\-disable-external \
             \-\-allow-hash-href \
-            \-\-ignore-missing-img \
-            \-\-ignore-empty-alt \
-            \-\-ignore-empty-mailto \
-            \-\-no-enforce-https \
-            \-\-ignore-urls "^/category/,^/tag/,^/[0-9]+$,^//,^/img_,^/image-"
+            \-\-ignore-missing-alt \
+            \-\-ignore-urls "/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/,/^\/category\//,/^\/tag\//,/^\/[0-9]+$/,/^\/\/.*$/,/^\/img_.*/,/^\/image-.*/"
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
