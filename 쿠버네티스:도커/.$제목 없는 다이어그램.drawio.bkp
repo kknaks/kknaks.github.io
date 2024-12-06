@@ -1,0 +1,67 @@
+<mxfile host="Electron" modified="2024-12-05T01:28:45.534Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.6.4 Chrome/124.0.6367.207 Electron/30.0.6 Safari/537.36" etag="CgqG6AWtrZDbwaTbnoGe" version="24.6.4" type="device">
+  <diagram name="페이지-1" id="Eb-fghjegC1z97YQD37V">
+    <mxGraphModel dx="1224" dy="931" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="w-kAKC5IR4dSsOKk3QCK-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="60" width="600" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="w-kAKC5IR4dSsOKk3QCK-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="w-kAKC5IR4dSsOKk3QCK-4" target="w-kAKC5IR4dSsOKk3QCK-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="w-kAKC5IR4dSsOKk3QCK-3" value="템플릿" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="w-kAKC5IR4dSsOKk3QCK-2">
+          <mxGeometry x="-0.125" y="3" relative="1" as="geometry">
+            <mxPoint y="-12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="w-kAKC5IR4dSsOKk3QCK-4" value=".html" style="shape=note;size=20;whiteSpace=wrap;html=1;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="155" y="240" width="99" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="w-kAKC5IR4dSsOKk3QCK-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="w-kAKC5IR4dSsOKk3QCK-7" target="w-kAKC5IR4dSsOKk3QCK-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="w-kAKC5IR4dSsOKk3QCK-6" value="생성" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="w-kAKC5IR4dSsOKk3QCK-5">
+          <mxGeometry x="-0.025" y="2" relative="1" as="geometry">
+            <mxPoint y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="w-kAKC5IR4dSsOKk3QCK-7" value="Thymeleaf" style="html=1;whiteSpace=wrap;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="335" y="240" width="119" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="w-kAKC5IR4dSsOKk3QCK-8" value="콘텐트" style="html=1;whiteSpace=wrap;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="535" y="240" width="119" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="w-kAKC5IR4dSsOKk3QCK-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="w-kAKC5IR4dSsOKk3QCK-11" target="w-kAKC5IR4dSsOKk3QCK-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="w-kAKC5IR4dSsOKk3QCK-10" value="데이터 삽입 위치에&amp;nbsp;&lt;div&gt;데이터 삽입&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="w-kAKC5IR4dSsOKk3QCK-9">
+          <mxGeometry x="-0.1143" y="4" relative="1" as="geometry">
+            <mxPoint x="46" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="w-kAKC5IR4dSsOKk3QCK-11" value="ServletRequest" style="html=1;whiteSpace=wrap;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="335" y="120" width="119" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="w-kAKC5IR4dSsOKk3QCK-12" value="데이터를 삽입하는 위치 표시&lt;div&gt;data-th-text&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FF3333;" vertex="1" parent="1">
+          <mxGeometry x="130" y="300" width="149" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="w-kAKC5IR4dSsOKk3QCK-13" value="웹에서도 읽기 가능" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="130" y="200" width="149" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="w-kAKC5IR4dSsOKk3QCK-14" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="390" width="600" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="w-kAKC5IR4dSsOKk3QCK-15" value="유저 인터페이스 모듈" style="html=1;whiteSpace=wrap;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="145" y="410" width="225" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="w-kAKC5IR4dSsOKk3QCK-16" value="각종 service" style="shape=note;size=10;whiteSpace=wrap;html=1;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="145" y="480" width="105" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="w-kAKC5IR4dSsOKk3QCK-17" value="공통 기능" style="shape=note;size=10;whiteSpace=wrap;html=1;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="270" y="480" width="105" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
