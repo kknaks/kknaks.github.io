@@ -1,0 +1,34 @@
+<mxfile host="Electron" modified="2025-01-02T01:20:36.801Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.6.4 Chrome/124.0.6367.207 Electron/30.0.6 Safari/537.36" etag="oUA3zX1i_PEYRPNsp9yE" version="24.6.4" type="device">
+  <diagram name="페이지-1" id="oSfh6GjcHYkVdmPCCVAU">
+    <mxGraphModel dx="-6910" dy="2203" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="UchqNb0s_rMlolw3SZ9L-11" value="ApplicationContext" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontStyle=1;fontSize=15;align=left;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="8270" y="-1120" width="590" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="UchqNb0s_rMlolw3SZ9L-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UchqNb0s_rMlolw3SZ9L-1" target="UchqNb0s_rMlolw3SZ9L-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UchqNb0s_rMlolw3SZ9L-1" value="&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;span style=&quot;font-weight: 400; font-size: 10px;&quot;&gt;«client»&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 10px;&quot;&gt;client&lt;/span&gt;&lt;br style=&quot;font-size: 10px;&quot;&gt;&lt;/div&gt;" style="html=1;whiteSpace=wrap;fontStyle=1;verticalAlign=middle;fontColor=default;fillColor=default;strokeColor=default;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="8330" y="-974.7300000000001" width="102.76" height="32.47" as="geometry" />
+        </mxCell>
+        <mxCell id="UchqNb0s_rMlolw3SZ9L-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UchqNb0s_rMlolw3SZ9L-2" target="UchqNb0s_rMlolw3SZ9L-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UchqNb0s_rMlolw3SZ9L-2" value="&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;span style=&quot;font-weight: 400; font-size: 10px;&quot;&gt;«&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;server&lt;/span&gt;&lt;span style=&quot;font-weight: 400; font-size: 10px;&quot;&gt;»&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 10px;&quot;&gt;view&lt;/span&gt;&lt;br style=&quot;font-size: 10px;&quot;&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 10px;&quot;&gt;controller&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 10px;&quot;&gt;service&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;resolver&lt;/div&gt;" style="html=1;whiteSpace=wrap;fontStyle=1;verticalAlign=middle;fontColor=default;fillColor=default;strokeColor=default;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="8480" y="-1000.8600000000001" width="102.76" height="84.73" as="geometry" />
+        </mxCell>
+        <mxCell id="UchqNb0s_rMlolw3SZ9L-3" value="&lt;span style=&quot;font-size: 10px;&quot;&gt;Data&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;Base&lt;/span&gt;&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=5.326086956521777;" vertex="1" parent="1">
+          <mxGeometry x="8710" y="-979.9950000000001" width="60" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="UchqNb0s_rMlolw3SZ9L-4" value="&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;ex)&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Query1&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Query2&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Query3&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Query4&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="html=1;whiteSpace=wrap;fontStyle=1;verticalAlign=middle;fontColor=default;fillColor=default;strokeColor=default;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="8621" y="-1040" width="62.76" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="UchqNb0s_rMlolw3SZ9L-7" value="&lt;h1 style=&quot;margin-top: 0px; font-size: 12px;&quot;&gt;쿼리가 다 종료될 때&amp;nbsp;&lt;/h1&gt;&lt;h1 style=&quot;margin-top: 0px; font-size: 12px;&quot;&gt;까지 커넷션을 유지&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="8597.38" y="-950" width="110" height="56.13" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
