@@ -1,10 +1,10 @@
 ---
-title: [점프 투 스프링부트] 2장 스프링 부트의 기본 기능 익히기(상)
-date: 2025-01-04 1:35:23 +0900
-updated: 2025-01-04 1:35:23 +0900
+title: [점프 투 스프링부트] 2장 스프링 부트의 기본 기능 익히기(하)
+date: 2025-01-05 1:35:23 +0900
+updated: 2025-01-05 1:35:23 +0900
 category: SpringBoot
 tags: 스프링부트, 독학
-permalink: /springboot/chapter2/
+permalink: /springboot/chapter2_2/
 ---
 ## 전체코드 
 - [Github](https://github.com/kknaks/likeLion_mystudy/commit/ab42bae)
@@ -529,3 +529,204 @@ project-root/
     }
     ```
   - 본 실행 코드에서는 트랜젝션 없이도 잘 유지된다.
+  
+=============================================================
+
+## 전체코드
+- [Github](https://github.com/kknaks/likeLion_mystudy/commit/ab42bae)
+
+## 2.6 도메인 별로 분류 
+- 도메인이란 비즈니스 로직을 처리하는 클래스를 말한다.
+- 도메인을 별도의 패키지로 분류하여 관리하면 코드의 가독성이 높아진다.
+- 도메인을 분류하는 방법은 다음과 같다.
+  1) 도메인 패키지 생성
+  2) 도메인별로 패키지 생성
+  3) 도메인별로 엔티티, 레포지터리, 서비스, 컨트롤러를 생성한다.
+  4) 도메인별로 패키지를 생성하여 관리한다.
+  
+```markdown
+project-root/
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/
+│   │   │       └── example/
+│   │   │           └── project/
+│   │   │               ├── domain/
+│   │   │               │   ├── user/
+│   │   │               │   │   ├── controller/
+│   │   │               │   │   ├── service/
+│   │   │               │   │   ├── repository/
+│   │   │               │   │   ├── entity/
+│   │   │               │   │   └── dto/
+│   │   │               │   ├── Answer/
+│   │   │               │   │   ├── controller/
+│   │   │               │   │   ├── service/
+│   │   │               │   │   ├── repository/
+│   │   │               │   │   ├── entity/
+│   │   │               │   │   └── dto/
+│   │   │               │   └── Question/
+│   │   │               │       ├── controller/
+│   │   │               │       ├── service/
+│   │   │               │       ├── repository/
+│   │   │               │       ├── entity/
+│   │   │               │       └── dto/
+```
+
+## 2.7 질문 목록만들기 
+1) QuestionController 구현
+  ```java
+  package com.ll.jump.Question.controller;
+  
+  import org.springframework.stereotype.Controller;
+  import org.springframework.web.bind.annotation.GetMapping;
+  import org.springframework.web.bind.annotation.ResponseBody;
+
+  @Controller
+  @RequiredArgsConstructor
+  public class QuestionController {
+    private final QuestionRepository questionRepository;
+  
+    @GetMapping("/question/list")
+  
+    public String list(Model model) {
+      List<Question> questionList = questionRepository.findAll();
+      model.addAttribute("questionList", questionList);
+      return "question_list";
+    }
+  }
+  ```
+2) question_list.html 구현 
+- 타임리프를 활용하면 구현한다. 
+```gradle
+dependencies {
+  implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+}
+```
+- resources/templates/question_list.html
+
+## 2.8 Root URL 사용히기
+- Root URL을 사용하면 사용자가 웹사이트에 접속했을 때 가장 먼저 보여지는 페이지를 설정할 수 있다.
+- 메인 컨트롤러를 수정한다. 
+- MainController.java
+  ```java
+  package com.ll.jump.controller;
+  
+  import org.springframework.stereotype.Controller;
+  import org.springframework.web.bind.annotation.GetMapping;
+  import org.springframework.web.bind.annotation.ResponseBody;
+  
+  @Controller
+  public class MainController {
+    @GetMapping("/sbb")
+    @ResponseBody
+    public String index() {
+      return "index";
+    }
+  
+    @GetMapping("/")
+    public String root() {
+      return "redirect:/question/list";
+    }
+  }
+  ```
+
+## 2.9 Service 활용하기 
+- 서비스는 비즈니스 로직을 처리하는 클래스이다.
+- 서비스 코드를 사용하는 이유
+  - 복잡한 코드를 모듈화 할 수 있다.
+  - 민감한 엔티티 코드를 숨길 수 있다. 
+
+### 서비스 만들기 
+1) QuestionService.java
+  ```java
+  package com.ll.jump.service;
+  
+  import com.ll.jump.entity.Question;
+  import com.ll.jump.repository.QuestionRepository;
+  import lombok.RequiredArgsConstructor;
+  import org.springframework.stereotype.Service;
+  
+  import java.util.List;
+  
+  @Service
+  @RequiredArgsConstructor
+  public class QuestionService {
+    private final QuestionRepository questionRepository;
+  
+    public List<Question> findAll() {
+      return questionRepository.findAll();
+    }
+  }
+  ```
+
+2) 컨트롤러 수정 
+  ```java
+    @Controller
+    @RequiredArgsConstructor
+    public class QuestionController {
+      private final QuestionService questionService;
+    
+      @GetMapping("/question/list")
+    
+      public String list(Model model) {
+        List<Question> questionList = questionService.findAll();
+        model.addAttribute("questionList", questionList);
+        return "question_list";
+      }
+    }
+  ```
+
+## 2.10 질문 상세보기 기능 구현하기
+1) 링크 추가하기
+- html 파일에서 a 태그를 활용하여 링크를 추가한다. 
+- question_list.html
+  ```html
+    <a th:href="@{|/question/detail/${question.id}|}" th:text="${question.subject}"></a>
+  ```
+
+2) Mapping 추가하기
+- QuestionController.java
+  ```java
+  @GetMapping("/question/detail/{id}")
+  public String detail(
+      Model model,
+      @PathVariable("id") Integer id) {
+
+    return "question_detail";
+  }
+  ```
+  
+3) Service 추가하기
+- QuestionService.java
+  ```java
+  public Question getQuestion(Integer id) {
+    Optional<Question> question = questionRepository.findById(id);
+    if (question.isPresent()) {
+      return question.get();
+    } else {
+      throw new DataNotFoundException("Question not found");
+    }
+  }
+  ```
+- DataNotFoundException 클래스 추가
+  - 예외처리 클래스를 만들어서 사용한다.
+  ```java
+  package com.ll.jump;
+  
+  import org.springframework.http.HttpStatus;
+  import org.springframework.web.bind.annotation.ResponseStatus;
+  
+  @ResponseStatus(value = HttpStatus.NOT_FOUND, reason = "Entity not found")
+  public class DataNotFoundException extends RuntimeException {
+    private static final long serialVersionUID = 1L;
+    public DataNotFoundException(String message) {
+      super(message);
+    }
+  }
+  ```
+4) 상세페이지 구현
+    ```html
+    <h1 th:text="${question.subject}"></h1>
+    <div th:text="${question.content}"></div>
+    ```
