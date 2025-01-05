@@ -185,6 +185,7 @@ dependencies {
   ```
 - DataNotFoundException 클래스 추가
   - 예외처리 클래스를 만들어서 사용한다.
+  
   ```java
   package com.ll.jump;
   
@@ -199,6 +200,7 @@ dependencies {
     }
   }
   ```
+  
 4) 상세페이지 구현
     ```html
     <h1 th:text="${question.subject}"></h1>
@@ -232,6 +234,7 @@ dependencies {
 1) Form 만들기 
 - post요청을 보내는 form을 추가한다. 
 - post요청을 보내면 question의 id 값과 body에 content를 전송 한다.
+
 ```html
 <form th:action="@{|/answer/create/${question.id}|}" method="post">
   <textarea name="content" id="content" rows="15"></textarea>
@@ -243,6 +246,7 @@ dependencies {
 - 서버에서 id path로 question 객체를 생성하고 
 - question 객체와 content를 이용하여 answer를 생성한후 repository에서 저장한다. 
 - AnswerController.java
+
   ```java
   @Controller
   @RequestMapping("/answer")
