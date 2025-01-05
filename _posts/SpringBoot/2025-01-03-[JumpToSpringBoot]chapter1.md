@@ -1,9 +1,9 @@
 ---
-title: [점프 투 스프링부트] 1장 스프링부트 개발준비하기
+title: "(점프 투 스프링부트) 1장 스프링부트 개발준비하기"
 date: 2025-01-03 1:35:23 +0900
 updated: 2025-01-03 1:35:23 +0900
 category: SpringBoot
-tags: 스프링부트, 독학
+tags: [스프링부트, 독학]
 permalink: /springboot/chapter1/
 ---
 
