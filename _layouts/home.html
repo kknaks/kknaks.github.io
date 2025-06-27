@@ -35,13 +35,13 @@ refactor: true
 
     <!-- Tech Stack Section -->
     <div class="profile-section">
-      <h2 class="border-bottom border-primary pb-2 mb-2 small">🛠 Tech Stack</h2>
+      <h2 class="border-bottom border-primary pb-2 mb-3 small">🛠 Tech Stack</h2>
       <div class="row g-2">
         <!-- Backend Development -->
-        <div class="col-6">
+        <div class="col-6 mb-3">
           <div class="card h-100 shadow-sm">
-            <div class="card-body p-2">
-              <h3 class="card-title fs-6 mt-1 mb-1">💻 Backend Development</h3>
+            <div class="card-body p-3">
+              <h3 class="card-title fs-6 mt-1 mb-2">💻 Backend Development</h3>
               <div class="card-text small">
                 <ul class="mb-0">
                   {% for skill in site.data.resume.skills.backend %}
@@ -54,10 +54,10 @@ refactor: true
         </div>
 
         <!-- Database & Storage -->
-        <div class="col-6">
+        <div class="col-6 mb-3">
           <div class="card h-100 shadow-sm">
-            <div class="card-body p-2">
-              <h3 class="card-title fs-6 mt-1 mb-1">💾 Database & Storage</h3>
+            <div class="card-body p-3">
+              <h3 class="card-title fs-6 mt-1 mb-2">💾 Database & Storage</h3>
               <div class="card-text small">
                 <ul class="mb-0">
                   {% for db in site.data.resume.skills.database %}
@@ -70,10 +70,10 @@ refactor: true
         </div>
 
         <!-- Cloud & DevOps -->
-        <div class="col-6">
+        <div class="col-6 mb-3">
           <div class="card h-100 shadow-sm">
-            <div class="card-body p-2">
-              <h3 class="card-title fs-6 mt-1 mb-1">☁️ Cloud & DevOps</h3>
+            <div class="card-body p-3">
+              <h3 class="card-title fs-6 mt-1 mb-2">☁️ Cloud & DevOps</h3>
               <div class="card-text small">
                 <ul class="mb-0">
                   {% for cloud in site.data.resume.skills.cloud %}
@@ -86,10 +86,10 @@ refactor: true
         </div>
 
         <!-- Monitoring & Communication -->
-        <div class="col-6">
+        <div class="col-6 mb-3">
           <div class="card h-100 shadow-sm">
-            <div class="card-body p-2">
-              <h3 class="card-title fs-6 mt-1 mb-1">📊 Monitoring & Communication</h3>
+            <div class="card-body p-3">
+              <h3 class="card-title fs-6 mt-1 mb-2">📊 Monitoring & Communication</h3>
               <div class="card-text small">
                 <ul class="mb-0">
                   {% for monitoring in site.data.resume.skills.monitoring %}
@@ -177,12 +177,12 @@ refactor: true
                   <div style="background-image: url('{{ project.image }}'); background-size: contain; background-repeat: no-repeat; background-position: center; width: 100%; height: 250px;"></div>
                 </div>
                 <div class="col-4">
-                  <div class="d-grid gap-2 mb-10">
+                  <div class="d-flex flex-column gap-2">
                     {% unless project.site == "#" %}
                       <a href="{{ project.site }}" class="btn btn-outline-info btn-sm">사이트 방문하기</a>
                     {% endunless %}
                     {% unless project.github == "#" %}
-                      <a href="{{ project.github }}" class="btn btn-outline-secondary btn-sm">GitHub</a>
+                      <a href="{{ project.github }}" class="btn btn-outline-dark btn-sm">GitHub</a>
                     {% endunless %}
                     {% unless project.details == "#" %}
                       <a href="{{ project.details }}" class="btn btn-outline-primary btn-sm">프로젝트 과정</a>
