@@ -201,16 +201,6 @@
   position: relative;
   overflow: hidden;
 
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 5px;
-    background: linear-gradient(90deg, var(--link-color), #6366f1);
-  }
-
   .resume-title {
     font-size: 1.5rem;
     margin-bottom: 2rem;

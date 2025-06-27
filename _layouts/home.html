@@ -155,7 +155,7 @@ refactor: true
                       <p class="mb-2">✓ 주요 기술</p>
                       <ul class="mb-0 ps-3" style="font-size: 0.75rem;">
                         {% for tech in project.tech_stack %}
-                        <li>{{ tech }}</li>
+                        <li>{{ tech[0] }}: {{ tech[1] }}</li>
                         {% endfor %}
                       </ul>
                     </div>
@@ -178,18 +178,15 @@ refactor: true
                 </div>
                 <div class="col-4">
                   <div class="d-grid gap-2 mb-10">
-                    {% if project.links.details == "#" %}
-                    {% else %}
-                      <a href="{{ project.links.details }}" class="btn btn-outline-primary btn-sm">상세보기</a>
-                    {% endif %}
-                    {% if project.links.github == "#" %}
-                    {% else %}
-                      <a href="{{ project.links.github }}" class="btn btn-outline-secondary btn-sm">GitHub</a>
-                    {% endif %}
-                    {% if project.links.demo == "#" %}
-                    {% else %}
-                      <a href="{{ project.links.demo }}" class="btn btn-outline-info btn-sm">Demo</a>
-                    {% endif %}
+                    {% unless project.site == "#" %}
+                      <a href="{{ project.site }}" class="btn btn-outline-info btn-sm">사이트 방문하기</a>
+                    {% endunless %}
+                    {% unless project.github == "#" %}
+                      <a href="{{ project.github }}" class="btn btn-outline-secondary btn-sm">GitHub</a>
+                    {% endunless %}
+                    {% unless project.details == "#" %}
+                      <a href="{{ project.details }}" class="btn btn-outline-primary btn-sm">프로젝트 과정</a>
+                    {% endunless %}
                   </div>
                 </div>
               </div>

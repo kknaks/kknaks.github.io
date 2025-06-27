@@ -528,41 +528,7 @@ main {
     display: inline-flex;
 }
 
-.shimmer {
-    overflow: hidden;
-    position: relative;
-    background: var(--img-bg);
 
-    &::before {
-        content: '';
-        position: absolute;
-        background: var(--shimmer-bg);
-        height: 100%;
-        width: 100%;
-        -webkit-animation: shimmer 1.3s infinite;
-        animation: shimmer 1.3s infinite;
-    }
-
-    @-webkit-keyframes shimmer {
-        0% {
-            transform: translateX(-100%);
-        }
-
-        100% {
-            transform: translateX(100%);
-        }
-    }
-
-    @keyframes shimmer {
-        0% {
-            transform: translateX(-100%);
-        }
-
-        100% {
-            transform: translateX(100%);
-        }
-    }
-}
 
 .embed-video {
     width: 100%;
@@ -695,6 +661,7 @@ $btn-mb: 0.5rem;
     z-index: 99;
     background: url(/assets/img/background.jpg);
     background-size: cover;
+    background-position: center;
     border-right: 1px solid var(--sidebar-border-color);
 
     /* Hide scrollbar for IE, Edge and Firefox */

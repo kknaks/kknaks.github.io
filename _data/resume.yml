@@ -69,7 +69,7 @@ projects:
   - name: 취업 뽀개기
     period: 2025.04 ~ 개발 중
     summary: 개발자 취준생 AI지원 서비스
-    position: 팀장
+    position: 개인프로젝트
     tech_stack:
       Backend: Spring, FastAPI, Django
       AI/ML: LangChain
@@ -81,9 +81,9 @@ projects:
       - 온라인 저지(코딩테스트) 레거시 코드 리팩토링 및 적용
       - "시스템 병목 지점 식별 및 처리량(Redis 캐싱: 137%, 레포 다운로드: 539.6%)개선"
     image: /assets/img/projects/취업뽀개기.gif
-    github: https://github.com/username/project
-    site: "#"
-    details: "#"
+    github: https://github.com/chibbotec
+    site: https://chibbotec.kknaks.site/
+    details: "/project/chibbotec"
 
   - name: 여기있개
     period: 2025.02 ~ 2025.03
@@ -100,9 +100,9 @@ projects:
       - 인증, 보안의 횡단관심사 분리를 통한 API 평균 응답시간 58ms 단축
       - 이미지 임베딩 생성 최적화로 처리 시간 평균 10초 단축(15s→5s)
     image: /assets/img/projects/여기있개.gif
-    github: https://github.com/username/project
-    site: "#"
-    details: "#"
+    github: https://github.com/Here-is-Paw
+    site: https://www.pawpaw.kknaks.site/
+    details: "/project/wheredog"
 
   - name: StockNote
     period: 2025.01 ~ 2025.02
@@ -120,9 +120,9 @@ projects:
       - 게시글 검색 응답시간 99.61% 개선(12s -> 47ms), 처리량 1,325.66% 개선
       - Terraform을 활용한 인프라 코드화(IaC)로 AWS, NCP 리소스 배포 시간 단축
     image: /assets/img/projects/stockNote.gif
-    github: https://github.com/username/project
+    github: https://github.com/stars/kknaks/lists/stocknote
     site: "#"
-    details: "#"
+    details: "/project/stocknote"
 
   - name: 모두의 여행
     period: 2024.11 ~ 2024.12
@@ -139,7 +139,7 @@ projects:
       - SSH 기반 자동화 배포로 배포 주기 단축(주 1회 → 일 3회) 및 안정성 확보
       - 서버 사이드 렌더링 최적화를 통한 초기 페이지 로드 시간 개선
     image: /assets/img/projects/everytrip.gif
-    github: https://github.com/username/project
+    github: https://github.com/kknaks/maketrip
     site: "#"
     details: "#"
 
