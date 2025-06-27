@@ -221,7 +221,6 @@ exclude:
   - LICENSE
   - "*.config.js"
   - package*.json
-
 jekyll-archives:
   enabled: [categories, tags]
   layouts:
@@ -230,3 +229,4 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+

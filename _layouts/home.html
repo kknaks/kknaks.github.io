@@ -7,104 +7,226 @@ refactor: true
 
 <div class="profile-wrapper">
   <div class="profile-content">
-    <h1 class="resume-title">이력서</h1>
-
+    <!-- About Me Section -->
     <div class="profile-section">
-      <h2>👤 인적사항</h2>
-      <ul class="info-list">
-        <li>이름: [Your Name]</li>
-        <li>이메일: [Your Email]</li>
-        <li>블로그: [Blog URL]</li>
-        <li>GitHub: [GitHub URL]</li>
-      </ul>
+      <h1 class="fw-bold mt-0">빠르게 배우고 성장하는 개발자 입니다!</h1>
+      <div class="row">
+        <div class="col-4">
+          <h2 class="border-bottom border-primary pb-2 mb-3 small">👤 About Me</h2>
+          <ul class="info-list small">
+            <li>이름: {{ site.data.resume.personal_info.name }}</li>
+            <li>이메일: {{ site.data.resume.personal_info.email }}</li>
+            <li>
+              블로그: <a href="{{ site.data.resume.personal_info.links.blog }}" target="_blank"><i class="fas fa-blog"></i></a>
+              | GitHub: <a href="{{ site.data.resume.personal_info.links.github }}" target="_blank"><i class="fab fa-github"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-8">
+          <h2 class="border-bottom border-primary pb-2 mb-3 small">🎓 Education</h2>
+          <ul class="info-list small">
+            {% for edu in site.data.resume.education %}
+            <li>{{ edu.period }} | {{ edu.school }} {{ edu.major }} ({{ edu.degree }})</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
     </div>
 
+    <!-- Tech Stack Section -->
     <div class="profile-section">
-      <h2>🎓 학력</h2>
-      <ul class="info-list">
-        <li>[졸업연도] [학교명] [전공] [학위]</li>
-      </ul>
+      <h2 class="border-bottom border-primary pb-2 mb-2 small">🛠 Tech Stack</h2>
+      <div class="row g-2">
+        <!-- Backend Development -->
+        <div class="col-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body p-2">
+              <h3 class="card-title fs-6 mt-1 mb-1">💻 Backend Development</h3>
+              <div class="card-text small">
+                <ul class="mb-0">
+                  {% for skill in site.data.resume.skills.backend %}
+                  <li><span class="fw-semibold">{{ skill.name }}:</span> {{ skill.details }}</li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Database & Storage -->
+        <div class="col-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body p-2">
+              <h3 class="card-title fs-6 mt-1 mb-1">💾 Database & Storage</h3>
+              <div class="card-text small">
+                <ul class="mb-0">
+                  {% for db in site.data.resume.skills.database %}
+                  <li><span class="fw-semibold">{{ db.name }}:</span> {{ db.details }}</li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cloud & DevOps -->
+        <div class="col-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body p-2">
+              <h3 class="card-title fs-6 mt-1 mb-1">☁️ Cloud & DevOps</h3>
+              <div class="card-text small">
+                <ul class="mb-0">
+                  {% for cloud in site.data.resume.skills.cloud %}
+                  <li><span class="fw-semibold">{{ cloud.name }}:</span> {{ cloud.details }}</li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Monitoring & Communication -->
+        <div class="col-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body p-2">
+              <h3 class="card-title fs-6 mt-1 mb-1">📊 Monitoring & Communication</h3>
+              <div class="card-text small">
+                <ul class="mb-0">
+                  {% for monitoring in site.data.resume.skills.monitoring %}
+                  <li><span class="fw-semibold">{{ monitoring.name }}:</span> {{ monitoring.details }}</li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
+    <!-- Achievements Section -->
     <div class="profile-section">
-      <h2>💼 경력사항</h2>
-      <div class="experience-item">
-        <h3>[회사명] (YYYY.MM - YYYY.MM)</h3>
-        <p class="position">직위: [Position]</p>
-        <p>주요 업무:</p>
-        <ul>
-          <li>[업무내용 1]</li>
-          <li>[업무내용 2]</li>
+      <h2 class="border-bottom border-primary pb-2 mb-3">🎯 Achievements</h2>
+      <div class="mb-1 mt-1">
+        <span class="fs-6">Backend Engineering</span>
+        <ul class="list-unstyled small mb-3">
+          {% for achievement in site.data.resume.achievements.backend %}
+          <li>• {{ achievement }}</li>
+          {% endfor %}
+        </ul>
+        
+        <span class="fs-6">Cloud & DevOps</span>
+        <ul class="list-unstyled small mb-3">
+          {% for achievement in site.data.resume.achievements.devops %}
+          <li>• {{ achievement }}</li>
+          {% endfor %}
         </ul>
       </div>
+      <div style="background-image: url('/assets/img/projects/project_summary.jpg'); background-size: contain; background-repeat: no-repeat; background-position: center; width: 100%; height: 400px;" class="mb-4"></div>
     </div>
 
+    <!-- Projects Section -->
     <div class="profile-section">
-      <h2>🛠 기술 스택</h2>
-      <div class="skills-wrapper">
-        <div class="skill-category">
-          <h3>언어</h3>
-          <ul>
-            <li>Java</li>
-            <li>Python</li>
-            <li>JavaScript</li>
-          </ul>
+      <h2 class="border-bottom border-primary pb-2 mb-3">📚 프로젝트</h2>
+      <div class="row g-3">
+        {% for project in site.data.resume.projects %}
+        <div class="col-12">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body p-3">
+              <!-- Project Content -->
+              <div class="mb-4">
+                <div class="d-flex justify-content-between mb-2">
+                  <h3 class="card-title fw-bold fs-6 mb-0 mt-0">{{ project.name }}</h3>
+                  <span class="small text-muted" style="line-height: 1.5;">{{ project.period }}</span>
+                </div>
+                <div class="card-text small">
+                  <div class="row g-3">
+                    <!-- Service Overview -->
+                    <div class="col-4">
+                      <p class="mb-2">✓ 서비스 개요</p>
+                      <p class="mb-0" style="font-size: 0.75rem;">{{ project.summary }}</p>
+                    </div>
+                    <!-- Main Role -->
+                    <div class="col-8">
+                      <p class="mb-2">✓ 주요 역할</p>
+                      <p class="mb-0" style="font-size: 0.75rem;">{{ project.position }}</p>
+                    </div>
+                    <!-- Tech Stack -->
+                    <div class="col-4">
+                      <p class="mb-2">✓ 주요 기술</p>
+                      <ul class="mb-0 ps-3" style="font-size: 0.75rem;">
+                        {% for tech in project.tech_stack %}
+                        <li>{{ tech }}</li>
+                        {% endfor %}
+                      </ul>
+                    </div>
+                    <!-- Achievements -->
+                    <div class="col-8">
+                      <p class="mb-2">✓ 주요 성과</p>
+                      <ul class="mb-0 ps-3" style="font-size: 0.75rem;">
+                        {% for achievement in project.achievements %}
+                        <li>{{ achievement }}</li>
+                        {% endfor %}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Image and Buttons -->
+              <div class="row align-items-end">
+                <div class="col-8">
+                  <div style="background-image: url('{{ project.image }}'); background-size: contain; background-repeat: no-repeat; background-position: center; width: 100%; height: 250px;"></div>
+                </div>
+                <div class="col-4">
+                  <div class="d-grid gap-2 mb-10">
+                    {% if project.links.details == "#" %}
+                    {% else %}
+                      <a href="{{ project.links.details }}" class="btn btn-outline-primary btn-sm">상세보기</a>
+                    {% endif %}
+                    {% if project.links.github == "#" %}
+                    {% else %}
+                      <a href="{{ project.links.github }}" class="btn btn-outline-secondary btn-sm">GitHub</a>
+                    {% endif %}
+                    {% if project.links.demo == "#" %}
+                    {% else %}
+                      <a href="{{ project.links.demo }}" class="btn btn-outline-info btn-sm">Demo</a>
+                    {% endif %}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="skill-category">
-          <h3>프레임워크 & 도구</h3>
-          <ul>
-            <li>Spring Boot</li>
-            <li>React</li>
-          </ul>
-        </div>
-        <div class="skill-category">
-          <h3>데이터베이스</h3>
-          <ul>
-            <li>MySQL</li>
-            <li>MongoDB</li>
-          </ul>
-        </div>
+        {% endfor %}
       </div>
     </div>
 
+    <!-- Certifications Section -->
     <div class="profile-section">
-      <h2>📚 프로젝트</h2>
-      <div class="project-item">
-        <h3>[프로젝트명] (YYYY.MM - YYYY.MM)</h3>
-        <ul class="project-details">
-          <li><strong>설명:</strong> [프로젝트 간단 설명]</li>
-          <li><strong>역할:</strong> [담당 역할]</li>
-          <li><strong>사용 기술:</strong> [사용된 기술 스택]</li>
-          <li><strong>주요 성과:</strong>
-            <ul>
-              <li>[성과 1]</li>
-              <li>[성과 2]</li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="profile-section">
-      <h2>🏆 자격증 & 수상</h2>
+      <h2 class="border-bottom border-primary pb-2 mb-3">🏆 자격증 & 수상</h2>
       <ul class="info-list">
-        <li>[자격증/수상명] (YYYY.MM)</li>
+        {% for cert in site.data.resume.certifications %}
+        <li>{{ cert.name }} ({{ cert.date }})</li>
+        {% endfor %}
       </ul>
     </div>
 
+    <!-- Activities Section -->
     <div class="profile-section">
-      <h2>💡 기타 활동</h2>
+      <h2 class="border-bottom border-primary pb-2 mb-3">💡 기타 활동</h2>
       <ul class="info-list">
-        <li>[활동명] (YYYY.MM - YYYY.MM)
+        {% for activity in site.data.resume.activities %}
+        <li>{{ activity.name }} ({{ activity.period }})
           <ul>
-            <li>[활동 설명]</li>
+            <li>{{ activity.description }}</li>
           </ul>
         </li>
+        {% endfor %}
       </ul>
     </div>
   </div>
 </div>
 
+<!-- Recent Posts Section -->
 <h2 class="post-list-heading">📝 Recent Posts</h2>
 
 {% assign pinned = site.posts | where: 'pin', 'true' %}
@@ -113,54 +235,58 @@ refactor: true
 {% assign posts = '' | split: '' %}
 
 <!-- Get pinned posts -->
-
 {% assign offset = paginator.page | minus: 1 | times: paginator.per_page %}
 {% assign pinned_num = pinned.size | minus: offset %}
 
 {% if pinned_num > 0 %}
-{% for i in (offset..pinned.size) limit: pinned_num %}
-{% assign posts = posts | push: pinned[i] %}
-{% endfor %}
+  {% for i in (offset..pinned.size) limit: pinned_num %}
+    {% assign posts = posts | push: pinned[i] %}
+  {% endfor %}
 {% else %}
-{% assign pinned_num = 0 %}
+  {% assign pinned_num = 0 %}
 {% endif %}
 
 <!-- Get default posts -->
-
 {% assign default_beg = offset | minus: pinned.size %}
 
-{% if default_beg < 0 %} {% assign default_beg=0 %} {% endif %} {% assign default_num=paginator.posts | size | minus:
-  pinned_num %} {% assign default_end=default_beg | plus: default_num | minus: 1 %} {% if default_num> 0 %}
-  {% for i in (default_beg..default_end) %}
-  {% assign posts = posts | push: default[i] %}
-  {% endfor %}
-  {% endif %}
+{% if default_beg < 0 %}
+  {% assign default_beg = 0 %}
+{% endif %}
 
-  <div id="post-list" class="flex-grow-1 px-xl-1">
-    {% for post in posts %}
+{% assign default_num = paginator.posts | size | minus: pinned_num %}
+{% assign default_end = default_beg | plus: default_num | minus: 1 %}
+
+{% if default_num > 0 %}
+  {% for i in (default_beg..default_end) %}
+    {% assign posts = posts | push: default[i] %}
+  {% endfor %}
+{% endif %}
+
+<div id="post-list" class="flex-grow-1 px-xl-1">
+  {% for post in posts %}
     <article class="card-wrapper card">
       <a href="{{ post.url | relative_url }}" class="post-preview row g-0 flex-md-row-reverse">
         {% assign card_body_col = '12' %}
 
         {% if post.image %}
-        {% assign src = post.image.path | default: post.image %}
-        {% unless src contains '//' %}
-        {% assign src = post.media_subpath | append: '/' | append: src | replace: '//', '/' %}
-        {% endunless %}
+          {% assign src = post.image.path | default: post.image %}
+          {% unless src contains '//' %}
+            {% assign src = post.media_subpath | append: '/' | append: src | replace: '//', '/' %}
+          {% endunless %}
 
-        {% assign alt = post.image.alt | xml_escape | default: 'Preview Image' %}
+          {% assign alt = post.image.alt | xml_escape | default: 'Preview Image' %}
 
-        {% assign lqip = null %}
+          {% assign lqip = null %}
 
-        {% if post.image.lqip %}
-        {% capture lqip %}lqip="{{ post.image.lqip }}"{% endcapture %}
-        {% endif %}
+          {% if post.image.lqip %}
+            {% capture lqip %}lqip="{{ post.image.lqip }}"{% endcapture %}
+          {% endif %}
 
-        <div class="col-md-5">
-          <img src="{{ src }}" alt="{{ alt }}" {{ lqip }}>
-        </div>
+          <div class="col-md-5">
+            <img src="{{ src }}" alt="{{ alt }}" {{ lqip }}>
+          </div>
 
-        {% assign card_body_col = '7' %}
+          {% assign card_body_col = '7' %}
         {% endif %}
 
         <div class="col-md-{{ card_body_col }}">
@@ -179,21 +305,21 @@ refactor: true
 
                 <!-- categories -->
                 {% if post.categories.size > 0 %}
-                <i class="far fa-folder-open fa-fw me-1"></i>
-                <span class="categories">
-                  {% for category in post.categories %}
-                  {{ category }}
-                  {%- unless forloop.last -%},{%- endunless -%}
-                  {% endfor %}
-                </span>
+                  <i class="far fa-folder-open fa-fw me-1"></i>
+                  <span class="categories">
+                    {% for category in post.categories %}
+                      {{ category }}
+                      {%- unless forloop.last -%},{%- endunless -%}
+                    {% endfor %}
+                  </span>
                 {% endif %}
               </div>
 
               {% if post.pin %}
-              <div class="pin ms-1">
-                <i class="fas fa-thumbtack fa-fw"></i>
-                <span>{{ site.data.locales[lang].post.pin_prompt }}</span>
-              </div>
+                <div class="pin ms-1">
+                  <i class="fas fa-thumbtack fa-fw"></i>
+                  <span>{{ site.data.locales[lang].post.pin_prompt }}</span>
+                </div>
               {% endif %}
             </div>
             <!-- .post-meta -->
@@ -202,10 +328,10 @@ refactor: true
         </div>
       </a>
     </article>
-    {% endfor %}
-  </div>
-  <!-- #post-list -->
+  {% endfor %}
+</div>
+<!-- #post-list -->
 
-  {% if paginator.total_pages > 1 %}
+{% if paginator.total_pages > 1 %}
   {% include post-paginator.html %}
-  {% endif %}
+{% endif %}

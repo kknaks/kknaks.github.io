@@ -1,0 +1,153 @@
+personal_info:
+  name: 이건학
+  email: dh221009@naver.com
+  blog: https://kknaks.github.io
+  github: https://github.com/kknaks
+
+education:
+  - period: 2017.03 - 2019.02
+    school: 경희대학교
+    major: 사회기반시스템공학과
+    degree: 학사
+
+  - period: 2024.05 - 2024.12
+    school: 비트캠프
+    major: 네이버클라우드 개발자 과정
+    degree: 수료
+
+  - period: 2024.12 - 2025.02
+    school: 멋쟁이사자처럼
+    major: 백엔드 스쿨 플러스
+    degree: 수료
+
+skills:
+  backend:
+    - name: Python
+      details: FastAPI, Django, LangChain
+    - name: Java
+      details: Spring Framework, JPA, MyBatis
+
+  database:
+    - name: RDBMS
+      details: MySQL, PostgreSQL
+    - name: NoSQL
+      details: MongoDB, Redis, Elasticsearch
+
+  cloud:
+    - name: Cloud
+      details: AWS(EC2, RDS), NCP
+    - name: Container
+      details: Docker, Docker-Compose
+    - name: CI/CD
+      details: GitHub Actions, Jenkins
+
+  monitoring:
+    - name: Monitoring
+      details: Prometheus, Grafana, Zipkin
+    - name: Message Queue
+      details: Kafka, Redpanda
+    - name: ELK Stack
+      details: Elasticsearch, Logstash, Kibana
+
+achievements:
+  backend:
+    - FastAPI, LangChain, CNN을 활용한 AI서비스 연동 및 인터페이스 구축
+    - Spring 기반 백엔드 API 서버 개발 및 운영
+    - MSA 기반 아키텍처 설계 및 Kafka를 활용한 비동기 통신 구현
+    - Prometheus, Zipkin을 활용한 시스템 모니터링, 성능개선, 유지보수
+    - K6 부하 테스트 도구로 성능 병목 분석 및 최적화 성능개선 137.0% 경험
+    - ELK스택을 활용한 검색 엔진 구축으로 검색 성능 99.6% 개선
+    - RESTful 규약 준수하는 API 설계 및 구현 능력
+
+  devops:
+    - AWS, NCP 클라우드 환경 구축 및 운영 경험 (EC2, RDS)
+    - GitHub Actions, Jenkins 활용한 CI/CD 및 무중단 배포 시스템 구현
+    - Docker, Docker-Compose를 통한 컨테이너 기반 서비스 배포
+    - Terraform 활용한 인프라 자동화 및 코드형 인프라(IaC) 구현
+
+projects:
+  - name: 취업 뽀개기
+    period: 2025.04 ~ 개발 중
+    summary: 개발자 취준생 AI지원 서비스
+    position: 팀장
+    tech_stack:
+      Backend: Spring, FastAPI, Django
+      AI/ML: LangChain
+      Message Queue: Redpanda
+      Database: MySQL, MongoDB
+    achievements:
+      - Kafka, RestAPI 을 활용한 10개의 서비스 연결 및 안정적인 운영
+      - 프롬프트, LLM, OutputParser 연동을 통한 안정적인 AI 답변 제공
+      - 온라인 저지(코딩테스트) 레거시 코드 리팩토링 및 적용
+      - "시스템 병목 지점 식별 및 처리량(Redis 캐싱: 137%, 레포 다운로드: 539.6%)개선"
+    image: /assets/img/projects/취업뽀개기.gif
+    github: https://github.com/username/project
+    site: "#"
+    details: "#"
+
+  - name: 여기있개
+    period: 2025.02 ~ 2025.03
+    summary: AI, 위치기반을 활용한 실종 반려견 매칭 서비스
+    position: 팀장
+    tech_stack:
+      Backend: Spring, FastAPI
+      Message Queue: Redpanda
+      Database: PostgreGIS
+      DevOps: Terraform, AWS, NCP
+    achievements:
+      - Kafka, RestAPI 을 활용한 10개의 서비스 연결 및 안정적인 운영
+      - 자동화 배포 및 socat 활용한 포트 리다이렉션으로 무중단 배포 구현
+      - 인증, 보안의 횡단관심사 분리를 통한 API 평균 응답시간 58ms 단축
+      - 이미지 임베딩 생성 최적화로 처리 시간 평균 10초 단축(15s→5s)
+    image: /assets/img/projects/여기있개.gif
+    github: https://github.com/username/project
+    site: "#"
+    details: "#"
+
+  - name: StockNote
+    period: 2025.01 ~ 2025.02
+    summary: 주식 포트폴리오 관리 서비스
+    position: 팀장
+    tech_stack:
+      Backend: Spring
+      Search Engine: ELK Stack
+      Testing: K6
+      Database: MySQL
+      Cloud: AWS, NCP
+    achievements:
+      - 포트폴리오 N+1 개선을 통한 부하테스트 응답시간 62.7% 감소(75ms -> 28ms)
+      - MySQL → Elasticsearch로 게시글, 주식종목 검색 구조 변경
+      - 게시글 검색 응답시간 99.61% 개선(12s -> 47ms), 처리량 1,325.66% 개선
+      - Terraform을 활용한 인프라 코드화(IaC)로 AWS, NCP 리소스 배포 시간 단축
+    image: /assets/img/projects/stockNote.gif
+    github: https://github.com/username/project
+    site: "#"
+    details: "#"
+
+  - name: 모두의 여행
+    period: 2024.11 ~ 2024.12
+    summary: 최적 경로 기반 여행 일정 관리 서비스
+    position: 팀장
+    tech_stack:
+      Backend: Spring, MyBatis
+      Database: MySQL
+      Cache: Redis
+      DevOps: Jenkins, NCP
+    achievements:
+      - 쿼리 최적화를 통한 메서드별 DB 접근 1회로 최적화
+      - 시간 복잡도 O(n²)에서 O(nlog n)으로 알고리즘 효율성 개선
+      - SSH 기반 자동화 배포로 배포 주기 단축(주 1회 → 일 3회) 및 안정성 확보
+      - 서버 사이드 렌더링 최적화를 통한 초기 페이지 로드 시간 개선
+    image: /assets/img/projects/everytrip.gif
+    github: https://github.com/username/project
+    site: "#"
+    details: "#"
+
+certifications:
+  - name: 정보처리기사
+    date: 2024.08
+
+activities:
+  - name: 알고리즘 스터디
+    period: 2024.05 - 현재
+    description: 백준 알고리즘 문제 풀이 및 코드 리뷰 진행
