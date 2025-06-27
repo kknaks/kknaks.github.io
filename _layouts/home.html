@@ -5,6 +5,108 @@ refactor: true
 
 {% include lang.html %}
 
+<div class="profile-wrapper">
+  <div class="profile-content">
+    <h1 class="resume-title">이력서</h1>
+
+    <div class="profile-section">
+      <h2>👤 인적사항</h2>
+      <ul class="info-list">
+        <li>이름: [Your Name]</li>
+        <li>이메일: [Your Email]</li>
+        <li>블로그: [Blog URL]</li>
+        <li>GitHub: [GitHub URL]</li>
+      </ul>
+    </div>
+
+    <div class="profile-section">
+      <h2>🎓 학력</h2>
+      <ul class="info-list">
+        <li>[졸업연도] [학교명] [전공] [학위]</li>
+      </ul>
+    </div>
+
+    <div class="profile-section">
+      <h2>💼 경력사항</h2>
+      <div class="experience-item">
+        <h3>[회사명] (YYYY.MM - YYYY.MM)</h3>
+        <p class="position">직위: [Position]</p>
+        <p>주요 업무:</p>
+        <ul>
+          <li>[업무내용 1]</li>
+          <li>[업무내용 2]</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="profile-section">
+      <h2>🛠 기술 스택</h2>
+      <div class="skills-wrapper">
+        <div class="skill-category">
+          <h3>언어</h3>
+          <ul>
+            <li>Java</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>프레임워크 & 도구</h3>
+          <ul>
+            <li>Spring Boot</li>
+            <li>React</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>데이터베이스</h3>
+          <ul>
+            <li>MySQL</li>
+            <li>MongoDB</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="profile-section">
+      <h2>📚 프로젝트</h2>
+      <div class="project-item">
+        <h3>[프로젝트명] (YYYY.MM - YYYY.MM)</h3>
+        <ul class="project-details">
+          <li><strong>설명:</strong> [프로젝트 간단 설명]</li>
+          <li><strong>역할:</strong> [담당 역할]</li>
+          <li><strong>사용 기술:</strong> [사용된 기술 스택]</li>
+          <li><strong>주요 성과:</strong>
+            <ul>
+              <li>[성과 1]</li>
+              <li>[성과 2]</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="profile-section">
+      <h2>🏆 자격증 & 수상</h2>
+      <ul class="info-list">
+        <li>[자격증/수상명] (YYYY.MM)</li>
+      </ul>
+    </div>
+
+    <div class="profile-section">
+      <h2>💡 기타 활동</h2>
+      <ul class="info-list">
+        <li>[활동명] (YYYY.MM - YYYY.MM)
+          <ul>
+            <li>[활동 설명]</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<h2 class="post-list-heading">📝 Recent Posts</h2>
+
 {% assign pinned = site.posts | where: 'pin', 'true' %}
 {% assign default = site.posts | where_exp: 'item', 'item.pin != true and item.hidden != true' %}
 
