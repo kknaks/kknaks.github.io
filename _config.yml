@@ -45,8 +45,13 @@ social:
     # - https://www.linkedin.com/in/username
 
 # Site Verification Settings
+# Google Search Console에서 사이트 소유권을 확인하고 검색 성능을 분석하는데 사용됩니다.
+# 설정 방법:
+# 1. https://search.google.com/search-console 접속
+# 2. 속성 추가 > URL 접두어에 https://kknaks.github.io 입력
+# 3. HTML 태그 방식 선택 후 제공받은 코드에서 content="여기 부분" 값을 아래에 입력
 webmaster_verifications:
-  google: # fill in your Google verification code
+  google: VKWXj8NrFzwEz2E2hqQbVPlXB8QYAE-nAXgqOSbvaoM # Google Search Console verification code
   bing: # fill in your Bing verification code
   alexa: # fill in your Alexa verification code
   yandex: # fill in your Yandex verification code
@@ -59,7 +64,7 @@ webmaster_verifications:
 # Web Analytics Settings
 analytics:
   google:
-    id: # fill in your Google Analytics ID
+    id: G-SJHWV5GDK1  # fill in your Google Analytics ID
   goatcounter:
     id: # fill in your GoatCounter ID
   umami:
