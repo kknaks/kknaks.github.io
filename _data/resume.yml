@@ -144,10 +144,13 @@ projects:
     details: "#"
 
 certifications:
-  - name: 정보처리기사
-    date: 2024.08
+  - name: NCP(네이버 클라우드 플랫폼 professional 자격증)
+    date: 2024.12
 
 activities:
+  - name: 도화엔지니어링
+    period: 2021.01 - 2023.12
+    description: 토목 설계 회사 (상하수도부문) 사원 
   - name: 알고리즘 스터디
-    period: 2024.05 - 현재
-    description: 백준 알고리즘 문제 풀이 및 코드 리뷰 진행
+    period: 2024.12 - 현재
+    description: 백준 알고리즘 문제 풀이 및 코드 리뷰 진행, 기술 면접 준비

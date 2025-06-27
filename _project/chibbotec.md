@@ -5,7 +5,8 @@ date: 2025-04-01 00:00:00 +0900
 ---
 
 ### 프로젝트 링크
-- [GitHub](https://github.com/username/project)
+- [GitHub](https://github.com/chibbotec)
+- [Site](https://chibbotec.kknaks.site/)
 
 ### 프로젝트 상세 정보
 
