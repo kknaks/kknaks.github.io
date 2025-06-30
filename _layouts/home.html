@@ -129,20 +129,23 @@ refactor: true
     <!-- Achievements Section -->
     <div class="profile-section">
       <h2 class="border-bottom border-primary pb-2 mb-3">🎯 Achievements</h2>
-      <div class="mb-1 mt-1">
-        <span class="fs-6">Backend Engineering</span>
-        <ul class="list-unstyled small mb-3">
-          {% for achievement in site.data.resume.achievements.backend %}
-          <li>• {{ achievement }}</li>
-          {% endfor %}
-        </ul>
-        
-        <span class="fs-6">Cloud & DevOps</span>
-        <ul class="list-unstyled small mb-3">
-          {% for achievement in site.data.resume.achievements.devops %}
-          <li>• {{ achievement }}</li>
-          {% endfor %}
-        </ul>
+      <div class="row">
+        <div class="col-6">
+          <span class="fs-6 fw-bold">Backend Engineering</span>
+          <ul class="list-unstyled small mb-3">
+            {% for achievement in site.data.resume.achievements.backend %}
+            <li>• {{ achievement }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="col-6">
+          <span class="fs-6 fw-bold">Cloud & DevOps</span>
+          <ul class="list-unstyled small mb-3">
+            {% for achievement in site.data.resume.achievements.devops %}
+            <li>• {{ achievement }}</li>
+            {% endfor %}
+          </ul>
+        </div>
       </div>
       <div style="background-image: url('/assets/img/projects/project_summary.jpg'); background-size: contain; background-repeat: no-repeat; background-position: center; width: 100%; height: 400px;" class="mb-4"></div>
     </div>
@@ -156,25 +159,27 @@ refactor: true
           <div class="card h-100 shadow-sm">
             <div class="card-body p-3">
               <!-- Project Content -->
-              <div class="mb-4">
-                <div class="d-flex justify-content-between mb-2">
-                  <h3 class="card-title fw-bold fs-6 mb-0 mt-0">{{ project.name }}</h3>
-                  <span class="small text-muted" style="line-height: 1.5;">{{ project.period }}</span>
-                </div>
-                <div class="card-text small">
-                  <div class="row g-3">
+              <div class="d-flex justify-content-between mb-2">
+                <h3 class="card-title fw-bold fs-6 mb-0 mt-0">{{ project.name }}</h3>
+                <span class="small text-muted" style="line-height: 1.5;">{{ project.period }}</span>
+              </div>
+              
+              <div class="row">
+                <!-- Left Column: Project Info -->
+                <div class="col-6">
+                  <div class="card-text small">
                     <!-- Service Overview -->
-                    <div class="col-4">
+                    <div class="mb-3">
                       <p class="mb-2">✓ 서비스 개요</p>
                       <p class="mb-0" style="font-size: 0.75rem;">{{ project.summary }}</p>
                     </div>
                     <!-- Main Role -->
-                    <div class="col-8">
+                    <div class="mb-3">
                       <p class="mb-2">✓ 주요 역할</p>
                       <p class="mb-0" style="font-size: 0.75rem;">{{ project.position }}</p>
                     </div>
                     <!-- Tech Stack -->
-                    <div class="col-4">
+                    <div class="mb-3">
                       <p class="mb-2">✓ 주요 기술</p>
                       <ul class="mb-0 ps-3" style="font-size: 0.75rem;">
                         {% for tech in project.tech_stack %}
@@ -183,7 +188,7 @@ refactor: true
                       </ul>
                     </div>
                     <!-- Achievements -->
-                    <div class="col-8">
+                    <div class="mb-3">
                       <p class="mb-2">✓ 주요 성과</p>
                       <ul class="mb-0 ps-3" style="font-size: 0.75rem;">
                         {% for achievement in project.achievements %}
@@ -193,23 +198,26 @@ refactor: true
                     </div>
                   </div>
                 </div>
-              </div>
-              <!-- Image and Buttons -->
-              <div class="row align-items-end">
-                <div class="col-8">
-                  <div style="background-image: url('{{ project.image }}'); background-size: contain; background-repeat: no-repeat; background-position: center; width: 100%; height: 250px;"></div>
-                </div>
-                <div class="col-4">
-                  <div class="d-flex flex-column gap-2">
-                    {% unless project.site == "#" %}
-                      <a href="{{ project.site }}" class="btn btn-outline-info btn-sm">사이트 방문하기</a>
-                    {% endunless %}
-                    {% unless project.github == "#" %}
-                      <a href="{{ project.github }}" class="btn btn-outline-dark btn-sm">GitHub</a>
-                    {% endunless %}
-                    {% unless project.details == "#" %}
-                      <a href="{{ project.details }}" class="btn btn-outline-primary btn-sm">프로젝트 과정</a>
-                    {% endunless %}
+                
+                <!-- Right Column: Image and Buttons -->
+                <div class="col-6">
+                  <div class="d-flex flex-column h-100">
+                    <!-- Image -->
+                    <div class="flex-grow-1 mb-3">
+                      <div style="background-image: url('{{ project.image }}'); background-size: contain; background-repeat: no-repeat; background-position: center; width: 100%; height: 250px;"></div>
+                    </div>
+                    <!-- Buttons -->
+                    <div class="d-flex flex-column gap-2 align-items-center">
+                      {% unless project.site == "#" %}
+                        <a href="{{ project.site }}" class="btn btn-outline-info btn-sm w-75">사이트 방문하기</a>
+                      {% endunless %}
+                      {% unless project.github == "#" %}
+                        <a href="{{ project.github }}" class="btn btn-outline-dark btn-sm w-75">GitHub</a>
+                      {% endunless %}
+                      {% unless project.details == "#" %}
+                        <a href="{{ project.details }}" class="btn btn-outline-primary btn-sm w-75">프로젝트 과정</a>
+                      {% endunless %}
+                    </div>
                   </div>
                 </div>
               </div>
