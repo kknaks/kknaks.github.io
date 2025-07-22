@@ -2,6 +2,7 @@
 title: 취업 뽀개기
 type: project
 date: 2025-04-01 00:00:00 +0900
+permalink: /project/chibbotec/
 ---
 
 ### 프로젝트 링크

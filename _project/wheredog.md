@@ -1,7 +1,8 @@
 ---
 title: 여기있개
 type: project
-date: 2025-02-01 00:00:00 +0900
+date: 2025-03-01 00:00:00 +0900
+permalink: /project/wheredog/
 ---
 
 ### 프로젝트 링크

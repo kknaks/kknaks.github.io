@@ -4,7 +4,7 @@ date: 2025-07-21 5:35:23 +0900
 updated: 2025-07-21 5:35:23 +0900
 category: codingTest
 tags: CS지식, 메트릭 
-permalink: /interview/short1/
+permalink: /study/prometheus/
 ---
 # Prometheus 기본 메트릭 종류와 역할
 

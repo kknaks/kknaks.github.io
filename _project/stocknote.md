@@ -1,7 +1,8 @@
 ---
 title: StockNote
 type: project
-date: 2025-01-01 00:00:00 +0900
+date: 2025-02-01 00:00:00 +0900
+permalink: /project/stocknote/
 ---
 ### 프로젝트 링크
 - [GitHub](https://github.com/stars/kknaks/lists/stocknote)

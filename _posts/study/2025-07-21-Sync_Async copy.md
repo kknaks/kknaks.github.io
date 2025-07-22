@@ -4,7 +4,7 @@ date: 2025-07-21 5:35:23 +0900
 updated: 2025-07-21 5:35:23 +0900
 category: codingTest
 tags: CS지식, 네트워크 
-permalink: /interview/short1/
+permalink: /study/sync-async/
 ---
 
 # 동기 처리 VS 비동기 처리 상세 비교

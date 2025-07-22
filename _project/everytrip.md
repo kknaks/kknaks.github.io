@@ -1,7 +1,8 @@
 ---
 title: 모두의 여행
 type: project
-date: 2024-11-01 00:00:00 +0900
+date: 2024-12-01 00:00:00 +0900
+permalink: /project/everytrip/
 ---
 ### 프로젝트 링크
 - [GitHub](https://github.com/username/project)

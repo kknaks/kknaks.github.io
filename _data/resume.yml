@@ -83,7 +83,7 @@ projects:
     image: /assets/img/projects/취업뽀개기.gif
     github: https://github.com/chibbotec
     site: https://chibbotec.kknaks.site/
-    details: "/project/chibbotec"
+    details: "/project/chibbotec/"
 
   - name: 여기있개
     period: 2025.02 ~ 2025.03
@@ -102,7 +102,7 @@ projects:
     image: /assets/img/projects/여기있개.gif
     github: https://github.com/Here-is-Paw
     site: https://www.pawpaw.kknaks.site/
-    details: "/project/wheredog"
+    details: "/project/wheredog/"
 
   - name: StockNote
     period: 2025.01 ~ 2025.02
@@ -122,7 +122,7 @@ projects:
     image: /assets/img/projects/stockNote.gif
     github: https://github.com/stars/kknaks/lists/stocknote
     site: "#"
-    details: "/project/stocknote"
+    details: "/project/stocknote/"
 
   - name: 모두의 여행
     period: 2024.11 ~ 2024.12
@@ -141,7 +141,7 @@ projects:
     image: /assets/img/projects/everytrip.gif
     github: https://github.com/kknaks/maketrip
     site: "#"
-    details: "#"
+    details: "/project/everytrip/"
 
 certifications:
   - name: NCP(네이버 클라우드 플랫폼 professional 자격증)
