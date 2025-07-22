@@ -2,7 +2,7 @@
 title: "[네트워크] 동기처리와 비동기처리"
 date: 2025-07-21 5:35:23 +0900
 updated: 2025-07-21 5:35:23 +0900
-category: codingTest
+category: Computer Science
 tags: CS지식, 네트워크 
 permalink: /study/sync-async/
 ---

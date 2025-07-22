@@ -2,7 +2,7 @@
 title: "[모니터링] 프로메테우스 메트릭"
 date: 2025-07-21 5:35:23 +0900
 updated: 2025-07-21 5:35:23 +0900
-category: codingTest
+category: Computer Science
 tags: CS지식, 메트릭 
 permalink: /study/prometheus/
 ---
