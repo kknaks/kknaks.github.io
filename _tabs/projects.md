@@ -1,7 +1,7 @@
 ---
 title: Projects
 icon: fas fa-user-tie
-order: 2
+order: 3
 ---
 
 ## 주요 프로젝트
