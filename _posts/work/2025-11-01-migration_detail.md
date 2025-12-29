@@ -17,8 +17,8 @@ permalink: /work/02_1_migration_detail
 
 #### - 마이그레이션 서비스 생성하기
 
-![1767005661930](image/02_1_migration_detail/1767005661930.png)
+![1767005661930](/assets/img/work/02_1_migration_detail/1767005661930.png)
 
 #### - 새 프로젝트 생성
 
-![1767005676014](image/02_1_migration_detail/1767005676014.png)
+![1767005676014](/assets/img/work/02_1_migration_detail/1767005676014.png)

@@ -37,7 +37,7 @@ permalink: /work/improve_2
 
 ### 1. CDC(Change Data Capture) 설정 및 동작 원리
 
-![1767005702638](https://file+.vscode-resource.vscode-cdn.net/Users/admin/git/kknaks.github.io/_posts/work/image/02_1_migration_detail/1767005702638.png)
+![1767005702638](/assets/img/work/02_1_migration_detail/1767005702638.png)
 
 ### 2. AWS CDC 설정
 
